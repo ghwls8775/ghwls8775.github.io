@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { GraphField } from '@/components/graph-field';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
@@ -20,7 +19,7 @@ export default function Home() {
               <p className="hero-body">My research interests are Combinatorics, Graph Theory, and Combinatorial Matrix Theory, with a particular interest in <strong>Extremal and Structural Graph Theory</strong>. My research has been focused on advancing the theoretical foundations of graph theory and exploring graph structures and their properties.</p>
               <p className="hero-body">I enjoy connecting with people 😁 Feel free to <a href="mailto:hojinchu@kias.re.kr">e-mail me</a> if you&apos;d like to discuss research topics.</p>
               <div className="hero-actions">
-                <Link className="button button-primary" href="/research/">Explore my research <span>↘</span></Link>
+                <a className="button button-primary" href="/research/">Explore my research <span>↘</span></a>
                 <a className="button" href="https://drive.google.com/file/d/1B_hkg5rX56hav1dFVP-390paRex50XrZ/view?usp=sharing" target="_blank" rel="noreferrer">CV · revised May 2026 <span>↗</span></a>
               </div>
             </div>
@@ -50,7 +49,7 @@ export default function Home() {
           </div>
           <div className="section-cta">
             <p>Publications, preprints, collaborators, and open-problem resources.</p>
-            <Link className="text-link" href="/research/">View all research <span>↗</span></Link>
+            <a className="text-link" href="/research/">View all research <span>↗</span></a>
           </div>
         </section>
       </main>
