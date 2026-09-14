@@ -122,11 +122,13 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow"><span /> Research Fellow · KIAS</p>
             <h1>Hojin Chu <em>추호진</em></h1>
-            <p className="hero-lede">I study the hidden structure of <strong>graphs</strong>—how local connections shape global behavior.</p>
-            <p className="hero-body">I am a Research Fellow in the School of Computational Sciences at the <a href="https://www.kias.re.kr/kias/main/main.do" target="_blank" rel="noreferrer">Korea Institute for Advanced Study</a>, mentored by Prof. Jeong Han Kim. My interests span combinatorics, graph theory, and combinatorial matrix theory.</p>
+            <p className="hero-lede">Hello, thank you for visiting my website !</p>
+            <p className="hero-body">I&apos;m <strong>Hojin Chu (추호진)</strong>, a research fellow in the School of Computational Sciences at the <a href="https://www.kias.re.kr/kias/main/main.do" target="_blank" rel="noreferrer">Korea Institute for Advanced Study (KIAS)</a>. (Mentor : Prof. Jeong Han Kim)</p>
+            <p className="hero-body">My research interests are Combinatorics, Graph Theory, and Combinatorial Matrix Theory, with a particular interest in <strong>Extremal and Structural Graph Theory</strong>. My research has been focused on advancing the theoretical foundations of graph theory and exploring graph structures and their properties.</p>
+            <p className="hero-body">I enjoy connecting with people 😁 Feel free to <a href="mailto:hojinchu@kias.re.kr">e-mail me</a> if you&apos;d like to discuss research topics.</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#research">Explore my research <span>↘</span></a>
-              <a className="button" href="https://drive.google.com/file/d/1B_hkg5rX56hav1dFVP-390paRex50XrZ/view?usp=sharing" target="_blank" rel="noreferrer">Download CV <span>↗</span></a>
+              <a className="button" href="https://drive.google.com/file/d/1B_hkg5rX56hav1dFVP-390paRex50XrZ/view?usp=sharing" target="_blank" rel="noreferrer">CV · revised May 2026 <span>↗</span></a>
             </div>
           </div>
           <figure className="portrait-wrap">

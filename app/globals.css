@@ -30,6 +30,8 @@ a { color:inherit; }
 .hero-lede { max-width:690px; margin:30px 0 14px; font-family:var(--display); font-size:clamp(20px,2vw,27px); line-height:1.4; }
 .hero-lede strong { color:var(--blue); font-weight:500; }
 .hero-body { max-width:690px; margin:0; color:#4f5961; font-family:var(--display); font-size:16px; line-height:1.75; }
+.hero-body + .hero-body { margin-top:10px; }
+.hero-body strong { color:var(--ink); font-weight:600; }
 .hero-body a { color:var(--blue); text-underline-offset:3px; }
 .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
 .button { display:inline-flex; align-items:center; justify-content:space-between; min-width:156px; gap:24px; padding:13px 16px; border:1px solid var(--line); background:var(--surface); text-decoration:none; font-size:13px; transition:transform .2s,border-color .2s; }
