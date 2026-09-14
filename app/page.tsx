@@ -25,7 +25,7 @@ export default function Home() {
             </div>
             <figure className="portrait-wrap">
               <div className="portrait-frame">
-                <img src="/hojin-chu.jpg" alt="Portrait of Hojin Chu" width="1280" height="1689" decoding="async" fetchPriority="high" />
+                <img src="/hojin-chu-main.jpg" alt="Portrait of Hojin Chu" width="1181" height="1575" decoding="async" fetchPriority="high" />
               </div>
               <figcaption><span>Seoul, Korea</span><span>Combinatorics · Graph Theory</span></figcaption>
             </figure>
