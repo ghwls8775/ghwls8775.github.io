@@ -1,5 +1,6 @@
 import { ExternalLink } from '@/components/external-link';
 import { PageIntro } from '@/components/page-intro';
+import { ProfilePhotoToggle } from '@/components/profile-photo-toggle';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
 import { pageMetadata } from '@/lib/metadata';
@@ -25,8 +26,11 @@ export default function AboutPage() {
 
         <section className="content-section page-shell about-overview">
           <figure className="about-photo">
-            <img src="/hojin-chu.jpg" alt="Hojin Chu" width="1280" height="1689" loading="lazy" />
-            <figcaption>Hojin Chu · 추호진</figcaption>
+            <ProfilePhotoToggle />
+            <figcaption>
+              <span>Hojin Chu · 추호진</span>
+              <span>Hover or tap to view the previous portrait</span>
+            </figcaption>
           </figure>
           <div className="about-details">
             <p className="kicker">Current position</p>
