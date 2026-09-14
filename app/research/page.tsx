@@ -19,7 +19,7 @@ export default function ResearchPage() {
 
         <section className="content-section page-shell publications">
           <div className="section-heading compact">
-            <div><p className="kicker">Research output / 논문</p><h2>Publications &<br/><em>preprints.</em></h2></div>
+            <div><p className="kicker">Research output / 논문</p><h2>Publications & <em>preprints.</em></h2></div>
             <p>Research articles on connectivity-preserving subgraphs, cycle restrictions, common-neighbor conditions, and graph-theoretic matrix decompositions.</p>
           </div>
           <div className="pub-columns">
@@ -29,7 +29,7 @@ export default function ResearchPage() {
                 {published.map(([title, authors, journal, paperUrl, arxiv], index) => (
                   <li key={title}>
                     <span className="paper-number">{String(index + 1).padStart(2, '0')}</span>
-                    <div><h4><ExternalLink href={paperUrl}>{title}</ExternalLink></h4><p>{authors}</p><cite>{journal}</cite><ExternalLink className="paper-link" href={arxiv}>arXiv ↗</ExternalLink></div>
+                    <div><h4><ExternalLink href={paperUrl}>{title}</ExternalLink></h4><p className="paper-authors">{authors}</p><cite className="paper-journal">{journal}</cite><ExternalLink className="paper-link" href={arxiv}>arXiv ↗</ExternalLink></div>
                   </li>
                 ))}
               </ol>
@@ -40,14 +40,14 @@ export default function ResearchPage() {
                 {preprints.map(([title, authors, href, id], index) => (
                   <li key={title}>
                     <span className="paper-number">{String(index + 1).padStart(2, '0')}</span>
-                    <div><h4><ExternalLink href={href}>{title}</ExternalLink></h4>{authors && <p>{authors}</p>}<ExternalLink className="paper-link" href={href}>arXiv:{id} ↗</ExternalLink></div>
+                    <div><h4><ExternalLink href={href}>{title}</ExternalLink></h4>{authors && <p className="paper-authors">{authors}</p>}<ExternalLink className="paper-link" href={href}>arXiv:{id} ↗</ExternalLink></div>
                   </li>
                 ))}
               </ol>
             </div>
           </div>
           <div className="publication-note">
-            <ExternalLink href="https://drive.google.com/file/d/1jADoKiArPaAjDPCu2aVpSZJRHVgfXWFv/view?usp=drive_link">Read my Ph.D. dissertation ↗</ExternalLink>
+            <ExternalLink className="dissertation-link" href="https://drive.google.com/file/d/1jADoKiArPaAjDPCu2aVpSZJRHVgfXWFv/view?usp=drive_link"><span>Ph.D. dissertation</span><strong>A study of digraph structure in terms of common neighbors</strong><em>Read dissertation ↗</em></ExternalLink>
             <p>The research “Competition graphs of degree bounded digraphs” was supported by a Basic Science Research Program grant from the National Research Foundation of Korea.</p>
           </div>
         </section>

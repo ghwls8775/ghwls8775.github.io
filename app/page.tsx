@@ -6,14 +6,14 @@ import { focusAreas } from '@/lib/content';
 export default function Home() {
   return (
     <>
-      <SiteHeader />
+      <SiteHeader active="home" />
       <main id="home">
         <section className="hero" id="top">
           <GraphField />
           <div className="hero-card page-shell">
             <div className="hero-copy">
               <p className="eyebrow"><span /> Research Fellow · KIAS</p>
-              <h1>Hojin Chu <em>추호진</em></h1>
+              <h1>Hojin Chu</h1>
               <p className="hero-lede">Hello, thank you for visiting my website !</p>
               <p className="hero-body">I&apos;m <strong>Hojin Chu (추호진)</strong>, a research fellow in the School of Computational Sciences at the <a href="https://www.kias.re.kr/kias/main/main.do" target="_blank" rel="noreferrer">Korea Institute for Advanced Study (KIAS)</a>. (Mentor : Prof. Jeong Han Kim)</p>
               <p className="hero-body">My research interests are Combinatorics, Graph Theory, and Combinatorial Matrix Theory, with a particular interest in <strong>Extremal and Structural Graph Theory</strong>. My research has been focused on advancing the theoretical foundations of graph theory and exploring graph structures and their properties.</p>
@@ -34,7 +34,7 @@ export default function Home() {
 
         <section className="section page-shell home-research" id="research">
           <div className="section-heading">
-            <div><p className="kicker">Research / 연구</p><h2>Structure through<br/><em>connection.</em></h2></div>
+            <div><p className="kicker">Research / 연구</p><h2>Structure through <em>connection.</em></h2></div>
             <p>I work on structural questions in graph theory and discrete mathematics, often looking for the precise conditions that force a graph to contain—or avoid—a particular configuration.</p>
           </div>
           <div className="focus-grid">

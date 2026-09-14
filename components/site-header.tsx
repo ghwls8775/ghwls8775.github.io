@@ -1,4 +1,5 @@
 const navigation = [
+  ['Home', '/'],
   ['About', '/about/'],
   ['Research', '/research/'],
   ['Talks', '/talks/'],

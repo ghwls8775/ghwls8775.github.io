@@ -20,7 +20,7 @@ export default function NewsPage() {
             <article className="news-row" key={`${item.date}-${item.title}`}>
               <div className="news-index">{String(index + 1).padStart(2, '0')}</div>
               <div className="news-date"><time>{item.date}</time><span>{item.label}</span></div>
-              <div><h2><ExternalLink href={item.href}>{item.title}</ExternalLink></h2><p>{item.text}</p></div>
+              <div className="news-content"><p className="news-summary">{item.text}</p><h2 className="news-title"><ExternalLink href={item.href}>{item.title}</ExternalLink></h2></div>
               <ExternalLink className="news-arrow" href={item.href} aria-label={`Open ${item.title}`}>↗</ExternalLink>
             </article>
           ))}

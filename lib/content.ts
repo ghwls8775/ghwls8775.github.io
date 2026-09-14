@@ -59,10 +59,10 @@ export const domesticTalks = [
 ] as const;
 
 export const publicTalks = [
-  ['Outreach Program · Paiwha Girls’ High School', 'Sep 3, 2026', 'Choosing a Path in Mathematics: Research, Careers, and Opportunities', []],
-  ['AI·Math Academy · KIAS & Dongdaemun-gu Office', 'Feb 5, 2026', 'Discovering hidden connections in the World through Graphs', [['Program', 'https://www.ddm.go.kr/www/selectUserOnlineReceptionView.do?key=96&programKey=767'], ['Video', 'https://youtu.be/Pb1UxkjHAkw?si=p1sGhG1GiPq9TctG']]],
-  ['Outreach Program · UNIST Mathematics & Physics Club', 'Sep 26, 2025', 'Careers in Mathematics: What it means to do Mathematical Research', [['Instagram', 'https://www.instagram.com/p/DPSc3TZElij/?igsh=eWNkbjFhM3ZxaTht'], ['Video', 'https://youtu.be/kXvi9lwfkNE?si=M-xP99FkNwBhFmFb']]],
-  ['Outreach Program · Mokpo Deogin High School', 'Sep 5, 2025', "A Mathematician's Career Path and Research", [['Instagram', 'https://instagram.com/p/DOnUJx3EsKx/?utm_source=qr'], ['Video', 'https://youtu.be/kqqqeAQzmps?feature=shared']]],
+  ['Outreach Program · Paiwha Girls’ High School', 'Sep 3, 2026', 'KIAS, Seoul, Korea', 'Choosing a Path in Mathematics: Research, Careers, and Opportunities', []],
+  ['AI·Math Academy · KIAS & Dongdaemun-gu Office', 'Feb 5, 2026', 'KIAS, Seoul, Korea', 'Discovering hidden connections in the World through Graphs', [['Program', 'https://www.ddm.go.kr/www/selectUserOnlineReceptionView.do?key=96&programKey=767'], ['Video', 'https://youtu.be/Pb1UxkjHAkw?si=p1sGhG1GiPq9TctG']]],
+  ['Outreach Program · UNIST Mathematics & Physics Club', 'Sep 26, 2025', 'KIAS, Seoul, Korea', 'Careers in Mathematics: What it means to do Mathematical Research', [['Instagram', 'https://www.instagram.com/p/DPSc3TZElij/?igsh=eWNkbjFhM3ZxaTht'], ['Video', 'https://youtu.be/kXvi9lwfkNE?si=M-xP99FkNwBhFmFb']]],
+  ['Outreach Program · Mokpo Deogin High School', 'Sep 5, 2025', 'KIAS, Seoul, Korea', "A Mathematician's Career Path and Research", [['Instagram', 'https://instagram.com/p/DOnUJx3EsKx/?utm_source=qr'], ['Video', 'https://youtu.be/kqqqeAQzmps?feature=shared']]],
 ] as const;
 
 export const collaborators = [
@@ -78,11 +78,11 @@ export const collaborators = [
 ] as const;
 
 export const newsItems = [
-  { date: 'August 2026', label: 'Preprint', title: 'Connectivity keeping paths in digraphs', href: 'https://arxiv.org/abs/2608.25240', text: 'Joint work with Boram Park and Homoon Ryu.' },
-  { date: 'August 2026', label: 'Talk', title: 'Cycles modulo 3 and 4: Extremal and Structural results', href: 'https://drive.google.com/file/d/1AoXRmWYkuGq2Po5zOUFlAnzs3IrS_qRY/view?usp=sharing', text: 'Invited talk at the One-Day Workshop on Graph Theory, Seoul National University.' },
-  { date: 'August 2026', label: 'Preprint', title: "A sharp extension of Halin's removable-edge theorem to matchings", href: 'https://arxiv.org/abs/2608.09394', text: 'New manuscript available on arXiv.' },
-  { date: 'July 2026', label: 'Preprint', title: 'Minimum degree conditions for removable matchings in k-connected graphs', href: 'https://arxiv.org/abs/2607.17533', text: 'Joint work with Ringi Kim and Boram Park.' },
-  { date: 'June 2026', label: 'Talk', title: 'Connectivity keeping trees in triangle-free graphs', href: 'https://www.siam.org/conferences-events/siam-conferences/dm26/', text: 'Contributed presentation at SIAM Conference on Discrete Mathematics (DM26), San Diego.' },
-  { date: 'June 2026', label: 'Preprint', title: 'On 2-connected graphs without cycles of length 1 modulo 3', href: 'https://arxiv.org/abs/2606.02356', text: 'Joint work with Yandong Bai, Binlong Li, Boram Park, and Homoon Ryu.' },
-  { date: 'May 2026', label: 'Preprint', title: 'Existence of cycles of length divisible by 3 or 4', href: 'https://arxiv.org/abs/2605.02731', text: 'Joint work with Ilkyoo Choi, Ringi Kim, and Boram Park.' },
+  { date: 'August 2026', label: 'Preprint', title: 'Connectivity keeping paths in digraphs', href: 'https://arxiv.org/abs/2608.25240', text: 'A new preprint on connectivity-keeping paths in digraphs is now available on arXiv, in joint work with Boram Park and Homoon Ryu.' },
+  { date: 'August 2026', label: 'Talk', title: 'Cycles modulo 3 and 4: Extremal and Structural results', href: 'https://drive.google.com/file/d/1AoXRmWYkuGq2Po5zOUFlAnzs3IrS_qRY/view?usp=sharing', text: 'I gave an invited talk on cycles modulo 3 and 4 at the One-Day Workshop on Graph Theory at Seoul National University.' },
+  { date: 'August 2026', label: 'Preprint', title: "A sharp extension of Halin's removable-edge theorem to matchings", href: 'https://arxiv.org/abs/2608.09394', text: 'A new manuscript presenting a sharp extension of Halin’s removable-edge theorem to matchings is now available on arXiv.' },
+  { date: 'July 2026', label: 'Preprint', title: 'Minimum degree conditions for removable matchings in k-connected graphs', href: 'https://arxiv.org/abs/2607.17533', text: 'A new preprint on minimum-degree conditions for removable matchings in k-connected graphs is available, jointly with Ringi Kim and Boram Park.' },
+  { date: 'June 2026', label: 'Talk', title: 'Connectivity keeping trees in triangle-free graphs', href: 'https://www.siam.org/conferences-events/siam-conferences/dm26/', text: 'I presented work on connectivity-keeping trees in triangle-free graphs at the SIAM Conference on Discrete Mathematics (DM26) in San Diego.' },
+  { date: 'June 2026', label: 'Preprint', title: 'On 2-connected graphs without cycles of length 1 modulo 3', href: 'https://arxiv.org/abs/2606.02356', text: 'A new preprint on 2-connected graphs without cycles of length 1 modulo 3 is available, jointly with Yandong Bai, Binlong Li, Boram Park, and Homoon Ryu.' },
+  { date: 'May 2026', label: 'Preprint', title: 'Existence of cycles of length divisible by 3 or 4', href: 'https://arxiv.org/abs/2605.02731', text: 'A new preprint on the existence of cycles of length divisible by 3 or 4 is available, jointly with Ilkyoo Choi, Ringi Kim, and Boram Park.' },
 ] as const;
