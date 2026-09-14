@@ -20,7 +20,7 @@ export default function AboutPage() {
     <>
       <SiteHeader active="about" />
       <main>
-        <PageIntro eyebrow="About / 소개" title="Mathematics through" accent="structure & people.">
+        <PageIntro eyebrow="About" title="Mathematics through" accent="structure & people.">
           <p>I am a research fellow at the Korea Institute for Advanced Study. My work sits at the intersection of combinatorics, graph theory, and combinatorial matrix theory.</p>
         </PageIntro>
 
@@ -66,7 +66,7 @@ export default function AboutPage() {
 
         <section className="content-section page-shell beyond-grid">
           <div className="beyond-copy">
-            <p className="kicker">Beyond papers / 그 밖의 이야기</p>
+            <p className="kicker">Beyond papers</p>
             <h2>Graphs connect more than <em>vertices.</em></h2>
             <p>I enjoy connecting with people and sharing mathematics outside the usual seminar room. I am also an avid climber, always looking for another route—and another way to think about structure.</p>
             <div className="review-note"><h3>Review Activities</h3><p>SIDMA · Discrete Mathematics · Discrete Applied Mathematics · Discussiones Mathematicae Graph Theory · FOCS 2026</p></div>

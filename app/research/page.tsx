@@ -12,14 +12,14 @@ export default function ResearchPage() {
     <>
       <SiteHeader active="research" />
       <main>
-        <PageIntro eyebrow="Research / 연구" title="Questions about" accent="structure.">
+        <PageIntro eyebrow="Research" title="Questions about" accent="structure.">
           <p>I work on structural questions in graph theory and discrete mathematics, often looking for the precise conditions that force a graph to contain—or avoid—a particular configuration.</p>
           <p>Topics I return to include Turán-type problems, Dean&apos;s conjecture, connectivity-preserving deletion, planarity, competition graphs, and discrete algorithms.</p>
         </PageIntro>
 
         <section className="content-section page-shell publications">
           <div className="section-heading compact">
-            <div><p className="kicker">Research output / 논문</p><h2>Publications & <em>preprints.</em></h2></div>
+            <div><p className="kicker">Research output</p><h2>Publications & <em>preprints.</em></h2></div>
             <p>Research articles on connectivity-preserving subgraphs, cycle restrictions, common-neighbor conditions, and graph-theoretic matrix decompositions.</p>
           </div>
           <div className="pub-columns">

@@ -59,11 +59,11 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
   background: linear-gradient(128deg, #e5e9dc 0%, #f3f2eb 48%, #ece9df 100%);
   border-bottom: 1px solid var(--line);
 }
-.graph-field { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .72; pointer-events: none; }
-.graph-lines { fill: none; stroke: var(--olive); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; opacity: .46; }
-.graph-nodes { fill: var(--olive-dark); opacity: .72; }
-.graph-nodes circle:nth-child(7n),
-.graph-nodes circle:nth-child(11n) { fill: var(--brick); opacity: 1; }
+.graph-field { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .7; pointer-events: none; }
+.graph-lines { fill: none; stroke: var(--olive); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; opacity: .42; }
+.graph-lines line { vector-effect: non-scaling-stroke; }
+.graph-nodes { fill: var(--olive-dark); opacity: .74; }
+.graph-nodes .graph-node-accent { fill: var(--brick); opacity: .96; }
 .hero-card {
   position: relative;
   z-index: 1;
@@ -157,14 +157,16 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .graph-nodes circle { animation: graphPulse 5.5s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
-  .graph-nodes circle:nth-child(3n) { animation-delay: -2.4s; }
-  @keyframes graphPulse { to { transform: scale(1.45); opacity: .5; } }
+  .graph-motif { animation: graphFloat 14s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
+  .graph-anchor:nth-child(even) .graph-motif { animation-duration: 18s; animation-delay: -6s; }
+  .graph-node-accent { animation: graphPulse 5.5s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
+  @keyframes graphFloat { to { transform: translateY(-7px); } }
+  @keyframes graphPulse { to { transform: scale(1.35); opacity: .62; } }
 }
 
 /* Interior pages */
 .page-intro {
-  min-height: 390px;
+  min-height: 300px;
   display: grid;
   align-items: center;
   position: relative;
@@ -172,8 +174,9 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
   background: linear-gradient(132deg, var(--olive-soft), #f4f3ec 62%, #eee8df);
   border-bottom: 1px solid var(--line);
 }
-.page-intro .graph-field { opacity: .48; }
-.page-intro .graph-lines { opacity: .3; }
+.page-intro .graph-field { opacity: .56; }
+.page-intro .graph-lines { opacity: .38; }
+.page-intro h1 { font-size: clamp(34px, 4vw, 50px); line-height: 1.04; }
 .page-intro-inner {
   position: relative;
   z-index: 1;
@@ -182,10 +185,10 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
   column-gap: 100px;
   row-gap: 12px;
   align-items: end;
-  padding-block: 78px;
+  padding-block: 52px;
 }
-.page-intro .kicker { grid-column: 1 / -1; }
-.page-intro-copy { color: #52594e; font: 18px / 1.7 var(--display); }
+.page-intro .kicker { grid-column: 1 / -1; margin-bottom: 10px; }
+.page-intro-copy { color: #52594e; font: 17px / 1.65 var(--display); }
 .page-intro-copy p { margin: 0; }
 .page-intro-copy p + p { margin-top: 15px; }
 .content-section { padding-block: 92px; }
@@ -337,17 +340,14 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
 .talk-link { display: flex; flex-direction: column; align-items: flex-end; gap: 7px; }
 .talk-link a { color: var(--brick); font-size: 11px; text-decoration: none; white-space: nowrap; }
 
-.talk-moments { margin: 74px 0; padding: 42px; background: var(--olive-soft); border: 1px solid rgba(70, 82, 55, .18); }
-.talk-moments-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end; margin-bottom: 30px; }
-.talk-moments-heading h2 { font-size: clamp(32px, 4vw, 48px); }
+.talk-moments { margin: 62px 0; padding: 32px; background: var(--olive-soft); border: 1px solid rgba(70, 82, 55, .18); }
+.talk-moments-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; margin-bottom: 24px; }
+.talk-moments-heading h2 { font-size: clamp(28px, 3vw, 38px); }
 .talk-moments-heading > p { margin: 0; color: var(--muted); font: 16px / 1.65 var(--display); }
-.talk-photo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.talk-photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; max-width: 900px; margin-inline: auto; }
 .talk-photo-card { min-width: 0; margin: 0; background: #fff; border: 1px solid rgba(70, 82, 55, .2); }
-.talk-photo-card.featured { grid-column: 1 / -1; }
 .talk-photo-card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; filter: saturate(.82) contrast(1.02); }
-.talk-photo-card.featured img { max-height: 470px; object-position: center 42%; }
 .talk-photo-card figcaption { padding: 13px 15px; color: var(--muted); font: 11px / 1.4 var(--sans); letter-spacing: .035em; }
-.talk-photo-card.featured figcaption { color: var(--olive-dark); font-size: 12px; }
 
 .news-list { padding-top: 70px; }
 .news-row { display: grid; grid-template-columns: 34px 132px minmax(0, 1fr) 28px; gap: 28px; align-items: start; padding: 34px 0; border-top: 1px solid var(--line); }
@@ -384,7 +384,7 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
 
 @media (max-width: 700px) {
   .page-intro { min-height: 0; }
-  .page-intro-inner { grid-template-columns: 1fr; row-gap: 24px; padding-block: 65px; }
+  .page-intro-inner { grid-template-columns: 1fr; row-gap: 18px; padding-block: 44px; }
   .page-intro-copy { font-size: 16px; }
   .content-section { padding-block: 70px; }
   .about-overview,
@@ -405,7 +405,6 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
   .talk-moments { margin-block: 58px; padding: 26px 20px; }
   .talk-moments-heading { grid-template-columns: 1fr; gap: 18px; }
   .talk-photo-grid { grid-template-columns: 1fr; }
-  .talk-photo-card.featured { grid-column: auto; }
   .news-row { grid-template-columns: 28px 1fr 20px; gap: 15px; }
   .news-date { grid-column: 2; grid-row: 1; flex-direction: row; align-items: center; }
   .news-content { grid-column: 2; }

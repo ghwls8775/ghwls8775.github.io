@@ -9,10 +9,10 @@ import { pageMetadata } from '@/lib/metadata';
 export const metadata = pageMetadata('Talks | Hojin Chu', 'International, domestic, and public presentations by graph theorist Hojin Chu.', '/talks/');
 
 const talkMoments = [
-  { src: '/talks/ilas-2025-talk.jpg', width: 1280, height: 759, caption: 'Photo from my talk at ILAS 2025', featured: true },
-  { src: '/talks/ilas-2025-group.jpg', width: 1280, height: 756, caption: 'Group photo from ILAS 2025', featured: false },
-  { src: '/talks/canadam-2025-group.jpg', width: 1280, height: 751, caption: 'Group photo from CanaDAM 2025', featured: false },
-  { src: '/talks/dma-2026-group.jpg', width: 1280, height: 754, caption: 'Group photo from DMA 2026', featured: false },
+  { src: '/talks/ilas-2025-talk.jpg', width: 1280, height: 759, caption: 'Photo from my talk at ILAS 2025' },
+  { src: '/talks/ilas-2025-group.jpg', width: 1280, height: 756, caption: 'Group photo from ILAS 2025' },
+  { src: '/talks/canadam-2025-group.jpg', width: 1280, height: 751, caption: 'Group photo from CanaDAM 2025' },
+  { src: '/talks/dma-2026-group.jpg', width: 1280, height: 754, caption: 'Group photo from DMA 2026' },
 ] as const;
 
 export default function TalksPage() {
@@ -20,7 +20,7 @@ export default function TalksPage() {
     <>
       <SiteHeader active="talks" />
       <main>
-        <PageIntro eyebrow="Talks / 발표" title="Sharing ideas," accent="building links.">
+        <PageIntro eyebrow="Talks" title="Sharing ideas," accent="building links.">
           <p>I present my work at international conferences, combinatorics workshops, seminars, and public programs that bring graph theory to wider audiences.</p>
         </PageIntro>
 
@@ -31,12 +31,12 @@ export default function TalksPage() {
           </div>
           <section className="talk-moments" aria-labelledby="talk-moments-title">
             <div className="talk-moments-heading">
-              <div><p className="kicker">Conference moments / 현장</p><h2 id="talk-moments-title">Mathematics in community.</h2></div>
+              <div><p className="kicker">Conference moments</p><h2 id="talk-moments-title">Mathematics in community.</h2></div>
               <p>Talks are where ideas meet people—from a seminar room to an international conference.</p>
             </div>
             <div className="talk-photo-grid">
               {talkMoments.map((photo) => (
-                <figure className={photo.featured ? 'talk-photo-card featured' : 'talk-photo-card'} key={photo.src}>
+                <figure className="talk-photo-card" key={photo.src}>
                   <img src={photo.src} alt={photo.caption} width={photo.width} height={photo.height} loading="lazy" />
                   <figcaption>{photo.caption}</figcaption>
                 </figure>

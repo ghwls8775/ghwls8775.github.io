@@ -11,7 +11,7 @@ export default function ContactPage() {
     <>
       <SiteHeader active="contact" />
       <main>
-        <PageIntro eyebrow="Contact / 연락" title="Let’s find the next" accent="connection.">
+        <PageIntro eyebrow="Contact" title="Let’s find the next" accent="connection.">
           <p>Feel free to email me if you would like to discuss a research topic, a problem, or a possible collaboration.</p>
         </PageIntro>
 

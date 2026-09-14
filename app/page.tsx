@@ -34,7 +34,7 @@ export default function Home() {
 
         <section className="section page-shell home-research" id="research">
           <div className="section-heading">
-            <div><p className="kicker">Research / 연구</p><h2>Structure through <em>connection.</em></h2></div>
+            <div><p className="kicker">Research</p><h2>Structure through <em>connection.</em></h2></div>
             <p>I work on structural questions in graph theory and <span className="keep-together">discrete mathematics</span>, often looking for the precise conditions that force a graph to contain—or avoid—a particular configuration.</p>
           </div>
           <div className="focus-grid">

@@ -12,7 +12,7 @@ export default function NewsPage() {
     <>
       <SiteHeader active="news" />
       <main>
-        <PageIntro eyebrow="News / 소식" title="Recent work &" accent="appearances.">
+        <PageIntro eyebrow="News" title="Recent work &" accent="appearances.">
           <p>New preprints, conference presentations, and other research updates, listed from the most recent.</p>
         </PageIntro>
         <section className="content-section page-shell news-list">
