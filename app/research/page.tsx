@@ -19,7 +19,6 @@ export default function ResearchPage() {
         <section className="content-section page-shell publications">
           <div className="section-heading compact">
             <div><p className="kicker">Research output</p><h2 className="publications-title">Publications & <em>preprints.</em></h2></div>
-            <p>Research articles on connectivity-preserving subgraphs, cycle restrictions, common-neighbor conditions, and graph-theoretic matrix decompositions.</p>
           </div>
           <div className="pub-columns">
             <div>
