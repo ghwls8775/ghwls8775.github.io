@@ -59,6 +59,7 @@ export default function ResearchPage() {
           <div className="publication-note">
             <ExternalLink className="dissertation-link" href="https://drive.google.com/file/d/1jADoKiArPaAjDPCu2aVpSZJRHVgfXWFv/view?usp=drive_link">
               <span>Ph.D. dissertation</span>
+              <strong>A study of digraph structure in terms of common neighbors</strong>
               <em>Read dissertation ↗</em>
             </ExternalLink>
           </div>
