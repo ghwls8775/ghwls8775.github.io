@@ -307,12 +307,8 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
 .paper-list .paper-authors { display: block; margin: 0 0 4px; color: #5b6158; font: 400 13px / 1.55 var(--sans); }
 .paper-list .paper-journal { display: block; margin: 0 0 4px; color: var(--olive-dark); font: italic 600 13px / 1.55 var(--display); }
 .paper-link { display: inline-block; margin-top: 9px; color: var(--olive); font-size: 11px; text-decoration: none; }
-.publication-note { display: grid; grid-template-columns: minmax(280px, .9fr) minmax(0, 1.7fr); gap: 52px; align-items: center; margin-top: 42px; padding: 30px 0; border-block: 1px solid var(--olive-dark); }
-.dissertation-link { display: grid; gap: 6px; color: var(--olive-dark); text-decoration: none; }
-.dissertation-link span { color: var(--brick); font: 700 10px / 1.2 var(--sans); letter-spacing: .1em; text-transform: uppercase; }
-.dissertation-link strong { font: 600 19px / 1.35 var(--display); }
-.dissertation-link em { color: var(--olive); font: normal 11px / 1.3 var(--sans); }
-.publication-note p { margin: 0; color: var(--muted); font: 13px / 1.65 var(--display); }
+.paper-grant { margin: 15px 0 2px; padding: 11px 13px; border-left: 2px solid var(--brick); background: var(--brick-soft); color: #555b52; font: 12px / 1.6 var(--sans); }
+.paper-grant strong { color: var(--ink); }
 .muted-section { background: var(--olive-soft); border-top: 1px solid var(--line); }
 .resource-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; }
 .resource-grid h2 { margin-bottom: 34px; }
@@ -407,7 +403,6 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
   .about-photo { width: min(270px, 82%); position: static; }
   .education-block article { grid-template-columns: 94px 1fr; }
   .pub-columns { grid-template-columns: 1fr; gap: 58px; }
-  .publication-note { grid-template-columns: 1fr; gap: 18px; }
   .collaborator-list { grid-template-columns: 1fr; }
   .collaborator-list a:nth-child(odd),
   .collaborator-list a:nth-child(even) { padding-inline: 3px; border-right: 0; }

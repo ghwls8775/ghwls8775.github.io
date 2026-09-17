@@ -27,7 +27,19 @@ export default function ResearchPage() {
                 {published.map(([title, authors, journal, paperUrl, arxiv], index) => (
                   <li key={title}>
                     <span className="paper-number">{String(index + 1).padStart(2, '0')}</span>
-                    <div><h4><ExternalLink href={paperUrl}>{title}</ExternalLink></h4><p className="paper-authors">{authors}</p><cite className="paper-journal">{journal}</cite><ExternalLink className="paper-link" href={arxiv}>arXiv ↗</ExternalLink></div>
+                    <div>
+                      <h4><ExternalLink href={paperUrl}>{title}</ExternalLink></h4>
+                      <p className="paper-authors">{authors}</p>
+                      <cite className="paper-journal">{journal}</cite>
+                      <ExternalLink className="paper-link" href={arxiv}>arXiv ↗</ExternalLink>
+                      {title === 'Competition graphs of degree bounded digraphs' && (
+                        <p className="paper-grant">
+                          For this research, I received a <strong>grant</strong> (with the same title) from{' '}
+                          <strong><em>Basic Science Research Program, National Research Foundation of Korea</em></strong>{' '}
+                          (KRW <strong>20,000,000</strong>).
+                        </p>
+                      )}
+                    </div>
                   </li>
                 ))}
               </ol>
@@ -43,10 +55,6 @@ export default function ResearchPage() {
                 ))}
               </ol>
             </div>
-          </div>
-          <div className="publication-note">
-            <ExternalLink className="dissertation-link" href="https://drive.google.com/file/d/1jADoKiArPaAjDPCu2aVpSZJRHVgfXWFv/view?usp=drive_link"><span>Ph.D. dissertation</span><strong>A study of digraph structure in terms of common neighbors</strong><em>Read dissertation ↗</em></ExternalLink>
-            <p>The research “Competition graphs of degree bounded digraphs” was supported by a Basic Science Research Program grant from the National Research Foundation of Korea.</p>
           </div>
         </section>
 
