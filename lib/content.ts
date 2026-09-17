@@ -59,10 +59,10 @@ export const domesticTalks = [
 ] as const;
 
 export const publicTalks = [
-  ['Outreach Program · Paiwha Girls’ High School', 'Sep 3, 2026', 'KIAS, Seoul, Korea', 'Choosing a Path in Mathematics: Research, Careers, and Opportunities', []],
-  ['AI·Math Academy · KIAS & Dongdaemun-gu Office', 'Feb 5, 2026', 'KIAS, Seoul, Korea', 'Discovering hidden connections in the World through Graphs', [['Program', 'https://www.ddm.go.kr/www/selectUserOnlineReceptionView.do?key=96&programKey=767'], ['Video', 'https://youtu.be/Pb1UxkjHAkw?si=p1sGhG1GiPq9TctG']]],
-  ['Outreach Program · UNIST Mathematics & Physics Club', 'Sep 26, 2025', 'KIAS, Seoul, Korea', 'Careers in Mathematics: What it means to do Mathematical Research', [['Instagram', 'https://www.instagram.com/p/DPSc3TZElij/?igsh=eWNkbjFhM3ZxaTht'], ['Video', 'https://youtu.be/kXvi9lwfkNE?si=M-xP99FkNwBhFmFb']]],
-  ['Outreach Program · Mokpo Deogin High School', 'Sep 5, 2025', 'KIAS, Seoul, Korea', "A Mathematician's Career Path and Research", [['Instagram', 'https://instagram.com/p/DOnUJx3EsKx/?utm_source=qr'], ['Video', 'https://youtu.be/kqqqeAQzmps?feature=shared']]],
+  ['Outreach', 'Outreach Program · Baewha Girls’ High School', 'Sep 3, 2026', 'KIAS, Seoul, Korea', 'Choosing a Path in Mathematics: Research, Careers, and Opportunities', [['Instagram', 'https://www.instagram.com/p/Dc-oGCCmGAf/?img_index=5&stkn=MWh6eTZ5ajhuOWxmZw==']]],
+  ['Public Lecture', 'AI·Math Academy · KIAS & Dongdaemun-gu Office', 'Feb 5, 2026', 'KIAS, Seoul, Korea', 'Discovering hidden connections in the World through Graphs', [['Program', 'https://www.ddm.go.kr/www/selectUserOnlineReceptionView.do?key=96&programKey=767'], ['Video', 'https://youtu.be/Pb1UxkjHAkw?si=p1sGhG1GiPq9TctG']]],
+  ['Outreach', 'Outreach Program · UNIST Mathematics & Physics Club', 'Sep 26, 2025', 'KIAS, Seoul, Korea', 'Careers in Mathematics: What it means to do Mathematical Research', [['Instagram', 'https://www.instagram.com/p/DPSc3TZElij/?igsh=eWNkbjFhM3ZxaTht'], ['Video', 'https://youtu.be/kXvi9lwfkNE?si=M-xP99FkNwBhFmFb']]],
+  ['Outreach', 'Outreach Program · Mokpo Deogin High School', 'Sep 5, 2025', 'KIAS, Seoul, Korea', "A Mathematician's Career Path and Research", [['Instagram', 'https://instagram.com/p/DOnUJx3EsKx/?utm_source=qr'], ['Video', 'https://youtu.be/kqqqeAQzmps?feature=shared']]],
 ] as const;
 
 export const collaborators = [

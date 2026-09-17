@@ -69,7 +69,7 @@ export default function AboutPage() {
             <p className="kicker">Beyond papers</p>
             <h2>Graphs connect more than <em>vertices.</em></h2>
             <p>I enjoy connecting with people and sharing mathematics outside the usual seminar room. I am also an avid climber, always looking for another route—and another way to think about structure.</p>
-            <div className="review-note"><h3>Review Activities</h3><p>SIDMA · Discrete Mathematics · Discrete Applied Mathematics · Discussiones Mathematicae Graph Theory · FOCS 2026</p></div>
+            <div className="review-note"><h3>Review Activities</h3><p>SIDMA · Discrete Mathematics · Discrete Applied Mathematics · Discussiones Mathematicae Graph Theory · FOCS 2026 · Ars Combinatoria</p></div>
           </div>
           <div className="video-card">
             <iframe src="https://www.youtube.com/embed/UaN_ketewPs" title="Hojin Chu — self-introduction and research overview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />

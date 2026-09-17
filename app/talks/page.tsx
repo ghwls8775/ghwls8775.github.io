@@ -25,7 +25,7 @@ export default function TalksPage() {
         </PageIntro>
 
         <section className="content-section page-shell talks-page">
-          <div className="talk-group">
+          <div className="talk-group talk-group--international">
             <div className="list-title"><h2>International presentations</h2><span>{String(internationalTalks.length).padStart(2, '0')}</span></div>
             <TalkList items={internationalTalks} />
           </div>
@@ -43,16 +43,16 @@ export default function TalksPage() {
               ))}
             </div>
           </section>
-          <div className="talk-group">
+          <div className="talk-group talk-group--domestic">
             <div className="list-title"><h2>Domestic presentations</h2><span>{String(domesticTalks.length).padStart(2, '0')}</span></div>
             <TalkList items={domesticTalks} />
           </div>
-          <div className="talk-group">
+          <div className="talk-group talk-group--public">
             <div className="list-title"><h2>Public & outreach talks</h2><span>{String(publicTalks.length).padStart(2, '0')}</span></div>
             <div className="talk-list">
-              {publicTalks.map(([event, date, place, title, links]) => (
+              {publicTalks.map(([type, event, date, place, title, links]) => (
                 <article className="talk-row" key={title}>
-                  <div className="talk-meta"><span>Outreach</span><time>{date}</time><small>{place}</small></div>
+                  <div className="talk-meta"><span>{type}</span><time>{date}</time><small>{place}</small></div>
                   <div className="talk-main"><h3>{event}</h3><p>{title}</p></div>
                   <div className="talk-link">{links.map(([label, href]) => <ExternalLink key={href} href={href}>{label} ↗</ExternalLink>)}</div>
                 </article>

@@ -13,13 +13,12 @@ export default function ResearchPage() {
       <SiteHeader active="research" />
       <main>
         <PageIntro eyebrow="Research" title="Questions about" accent="structure.">
-          <p>I work on structural questions in graph theory and discrete mathematics, often looking for the precise conditions that force a graph to contain—or avoid—a particular configuration.</p>
-          <p>Topics I return to include Turán-type problems, Dean&apos;s conjecture, connectivity-preserving deletion, planarity, competition graphs, and discrete algorithms.</p>
+          <p>I study structural graph theory and discrete mathematics, focusing on cycles, connectivity-preserving deletion, common-neighbor problems in digraphs, and graph-based algorithms.</p>
         </PageIntro>
 
         <section className="content-section page-shell publications">
           <div className="section-heading compact">
-            <div><p className="kicker">Research output</p><h2>Publications & <em>preprints.</em></h2></div>
+            <div><p className="kicker">Research output</p><h2 className="publications-title">Publications & <em>preprints.</em></h2></div>
             <p>Research articles on connectivity-preserving subgraphs, cycle restrictions, common-neighbor conditions, and graph-theoretic matrix decompositions.</p>
           </div>
           <div className="pub-columns">
@@ -58,7 +57,18 @@ export default function ResearchPage() {
               <p className="kicker">Collaborators</p>
               <h2>People I work with.</h2>
               <div className="collaborator-list">
-                {collaborators.map(([name, href]) => <ExternalLink href={href} key={name}>{name}<span>↗</span></ExternalLink>)}
+                {collaborators.map(([name, href]) => {
+                  const jointWorkCount = [...published, ...preprints].filter(([, authors]) =>
+                    authors.replace(/^with /, '').split(', ').includes(name),
+                  ).length;
+
+                  return (
+                    <ExternalLink href={href} key={name}>
+                      <span className="collaborator-name">{name}</span>
+                      <span className="collaborator-count">{jointWorkCount} joint {jointWorkCount === 1 ? 'work' : 'works'} ↗</span>
+                    </ExternalLink>
+                  );
+                })}
               </div>
             </div>
             <div>
