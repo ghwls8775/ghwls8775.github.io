@@ -56,6 +56,12 @@ export default function ResearchPage() {
               </ol>
             </div>
           </div>
+          <div className="publication-note">
+            <ExternalLink className="dissertation-link" href="https://drive.google.com/file/d/1jADoKiArPaAjDPCu2aVpSZJRHVgfXWFv/view?usp=drive_link">
+              <span>Ph.D. dissertation</span>
+              <em>Read dissertation ↗</em>
+            </ExternalLink>
+          </div>
         </section>
 
         <section className="content-section muted-section">
