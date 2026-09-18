@@ -6,7 +6,9 @@ export const metadata: Metadata = {
   title: 'Hojin Chu | Graph Theory & Combinatorics',
   description: 'Hojin Chu is a graph theory researcher at the Korea Institute for Advanced Study, working in combinatorics, structural graph theory, digraphs, and combinatorial matrix theory.',
   alternates: { canonical: '/' },
-  icons: { icon: '/favicon.svg' },
+  icons: {
+    icon: [{ url: '/favicon.ico', sizes: '16x16', type: 'image/x-icon' }],
+  },
   openGraph: {
     title: 'Hojin Chu | Graph Theory & Combinatorics',
     description: 'Research in combinatorics, structural graph theory, digraphs, and combinatorial matrix theory.',
