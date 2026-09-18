@@ -1,21 +1,21 @@
 export const focusAreas = [
   {
     mark: '01',
-    title: 'Extremal & Structural Graph Theory',
-    text: 'Cycle restrictions, Turán-type problems, and the structure hidden inside highly connected graphs.',
-    tags: ['Cycles', 'Connectivity', 'Extremal problems'],
+    title: 'Cycle Restrictions & Extremal Problems',
+    text: 'Studying how restrictions on cycle lengths constrain graph structure, with particular attention to Turán-type problems and Dean’s conjecture.',
+    tags: ['Cycles', 'Turán-type problems', 'Dean’s conjecture'],
   },
   {
     mark: '02',
-    title: 'Digraphs & Common Neighbors',
-    text: 'Characterizing directed graphs through exact common-neighbor conditions and related friendship phenomena.',
-    tags: ['Digraphs', 'Common neighbors', 'Friendship theorem'],
+    title: 'Connectivity-Preserving Deletion',
+    text: 'Determining when an edge, matching, path, or tree can be deleted while preserving connectivity in a graph or digraph.',
+    tags: ['Subgraph deletion', 'Connectivity', 'Removable structures'],
   },
   {
     mark: '03',
     title: 'Combinatorial Matrix Theory',
-    text: 'Translating structural graph results into matrix decompositions and efficient discrete algorithms.',
-    tags: ['Toeplitz matrices', 'Algorithms', 'Decomposition'],
+    text: 'Using graph-theoretic decompositions to study symmetric Toeplitz and Hankel matrices and develop discrete algorithms.',
+    tags: ['Toeplitz & Hankel', 'Decomposition', 'Algorithms'],
   },
 ];
 
