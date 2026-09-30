@@ -40,6 +40,11 @@ export const published = [
   ['Competition graphs of degree bounded digraphs', 'with Suh-Ryung Kim', 'Discrete Applied Mathematics, 343:106–114 (2024)', 'https://www.sciencedirect.com/science/article/pii/S0166218X23003840?via%3Dihub', 'https://arxiv.org/abs/2307.11625'],
 ] as const;
 
+export const upcomingTalks = [
+  { type: 'Invited', event: 'Combinatorics Seminar at HY', eventUrl: 'https://sites.google.com/view/hy-combinatorics-seminar', date: 'Oct 6, 2026', place: 'Hanyang University, Seoul, Korea', title: 'A sharp extension of Halin’s removable-edge theorem to matchings', deck: '' },
+  { type: 'Contributed', event: '2026 Combinatorics Workshop', eventUrl: 'https://cw2026.combinatorics.kr/', date: 'Oct 20–22, 2026', place: 'Konjiam Resort, Gwangju-si, Korea', title: 'Minimum degree conditions for removable matchings in k-connected graphs', deck: '' },
+] as const;
+
 export const internationalTalks = [
   { type: 'Contributed', event: 'SIAM Conference on Discrete Mathematics (DM26)', eventUrl: 'https://www.siam.org/conferences-events/siam-conferences/dm26/', date: 'June 22–25, 2026', place: 'San Diego, California, U.S.', title: 'Connectivity keeping trees in triangle-free graphs', deck: 'https://drive.google.com/file/d/13PMlAw3kh6Eb_vCJ7uAhFVih5w_2Uu0q/view?usp=sharing' },
   { type: 'Contributed', event: 'International Workshop on Discrete Mathematics and Algorithms 2026', eventUrl: 'https://onolab.github.io/dma2026/', date: 'Mar 16–18, 2026', place: 'Matsue, Japan', title: 'On 2-connected graphs avoiding cycles of length 0 modulo 4', deck: 'https://drive.google.com/file/d/1Gzee8hJr78tdNkw47CFwXfG79QDnQtyl/view?usp=sharing' },

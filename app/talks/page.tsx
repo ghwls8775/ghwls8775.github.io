@@ -3,7 +3,7 @@ import { PageIntro } from '@/components/page-intro';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
 import { TalkList } from '@/components/talk-list';
-import { domesticTalks, internationalTalks, publicTalks } from '@/lib/content';
+import { domesticTalks, internationalTalks, publicTalks, upcomingTalks } from '@/lib/content';
 import { pageMetadata } from '@/lib/metadata';
 
 export const metadata = pageMetadata('Talks | Hojin Chu', 'International, domestic, and public presentations by graph theorist Hojin Chu.', '/talks/');
@@ -25,6 +25,10 @@ export default function TalksPage() {
         </PageIntro>
 
         <section className="content-section page-shell talks-page">
+          <div className="talk-group talk-group--upcoming">
+            <div className="list-title"><h2>Upcoming talks</h2><span>{String(upcomingTalks.length).padStart(2, '0')}</span></div>
+            <TalkList items={upcomingTalks} />
+          </div>
           <div className="talk-group talk-group--international">
             <div className="list-title"><h2>International presentations</h2><span>{String(internationalTalks.length).padStart(2, '0')}</span></div>
             <TalkList items={internationalTalks} />
