@@ -351,6 +351,7 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
 .talk-row h3 { margin: 0 0 8px; font: 600 18px / 1.35 var(--display); hyphens: none; }
 .talk-row h3 a { text-decoration-color: var(--brick); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .talk-row p { margin: 0; color: var(--muted); font: 16px / 1.5 var(--display); hyphens: none; }
+.talk-row .talk-session { margin: 0 0 5px; color: var(--olive); font: 700 12px / 1.4 var(--sans); letter-spacing: .035em; }
 .talk-link { display: flex; flex-direction: column; align-items: flex-end; gap: 7px; }
 .talk-link a { color: var(--brick); font-size: 11px; text-decoration: none; white-space: nowrap; }
 

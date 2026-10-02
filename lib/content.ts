@@ -43,6 +43,7 @@ export const published = [
 export const upcomingTalks = [
   { type: 'Invited', event: 'Combinatorics Seminar at HY', eventUrl: 'https://sites.google.com/view/hy-combinatorics-seminar', date: 'Oct 6, 2026', place: 'Hanyang University, Seoul, Korea', title: 'A sharp extension of Halin’s removable-edge theorem to matchings', deck: '' },
   { type: 'Contributed', event: '2026 Combinatorics Workshop', eventUrl: 'https://cw2026.combinatorics.kr/', date: 'Oct 20–22, 2026', place: 'Konjiam Resort, Gwangju-si, Korea', title: 'Minimum degree conditions for removable matchings in k-connected graphs', deck: '' },
+  { type: 'Contributed', session: '(DM) Discrete Mathematics', event: '2026 KMS Annual Meeting', eventUrl: 'https://www.kms.or.kr/conference/2026_fall/', date: 'Oct 29–31, 2026', place: 'Gwangju Institute of Science and Technology (GIST)', title: 'On reconfiguration graphs induced by rainbow spanning trees', deck: '' },
 ] as const;
 
 export const internationalTalks = [

@@ -2,6 +2,7 @@ import { ExternalLink } from './external-link';
 
 type Talk = {
   readonly type: string;
+  readonly session?: string;
   readonly event: string;
   readonly eventUrl: string;
   readonly date: string;
@@ -16,7 +17,11 @@ export function TalkList({ items }: { items: readonly Talk[] }) {
       {items.map((talk) => (
         <article className="talk-row" key={`${talk.date}-${talk.title}`}>
           <div className="talk-meta"><span>{talk.type}</span><time>{talk.date}</time><small>{talk.place}</small></div>
-          <div className="talk-main"><h3>{talk.eventUrl ? <ExternalLink href={talk.eventUrl}>{talk.event}</ExternalLink> : talk.event}</h3><p>{talk.title}</p></div>
+          <div className="talk-main">
+            <h3>{talk.eventUrl ? <ExternalLink href={talk.eventUrl}>{talk.event}</ExternalLink> : talk.event}</h3>
+            {talk.session && <p className="talk-session">Session · {talk.session}</p>}
+            <p>{talk.title}</p>
+          </div>
           <div className="talk-link">{talk.deck && <ExternalLink href={talk.deck}>Deck ↗</ExternalLink>}</div>
         </article>
       ))}
