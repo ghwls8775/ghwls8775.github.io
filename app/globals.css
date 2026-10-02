@@ -339,9 +339,14 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
 .talk-group .list-title span { color: var(--talk-group-accent); }
 .talk-list { background: rgba(255, 255, 255, .58); }
 .talk-row { display: grid; grid-template-columns: 210px minmax(0, 1fr) 84px; gap: 32px; align-items: start; padding: 26px 20px; border-bottom: 1px solid var(--line); }
+.talk-row--featured { box-shadow: inset 3px 0 0 var(--talk-group-accent); }
+.talk-group--international .talk-row--featured { background: rgba(232, 234, 223, .55); }
+.talk-group--upcoming .talk-row--featured,
+.talk-group--domestic .talk-row--featured { background: rgba(240, 226, 222, .5); }
 .talk-row > div { min-width: 0; }
 .talk-meta { display: flex; flex-direction: column; gap: 7px; }
 .talk-meta span { width: max-content; padding: 4px 7px; background: var(--olive); color: #fff; font-size: 9px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+.talk-row--featured .talk-meta span { padding: 5px 9px; font-size: 10px; box-shadow: 0 3px 12px rgba(36, 40, 32, .12); }
 .talk-group--international .talk-meta span { background: var(--olive); }
 .talk-group--upcoming .talk-meta span,
 .talk-group--domestic .talk-meta span { background: var(--brick); }
@@ -349,6 +354,7 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
 .talk-meta time { margin-top: 6px; font-size: 13px; line-height: 1.35; font-weight: 700; white-space: nowrap; }
 .talk-meta small { color: var(--muted); font-size: 12px; line-height: 1.45; }
 .talk-row h3 { margin: 0 0 8px; font: 600 18px / 1.35 var(--display); hyphens: none; }
+.talk-row--featured h3 { font-weight: 700; }
 .talk-row h3 a { text-decoration-color: var(--brick); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .talk-row p { margin: 0; color: var(--muted); font: 16px / 1.5 var(--display); hyphens: none; }
 .talk-row .talk-session { margin: 0 0 5px; color: var(--olive); font: 700 12px / 1.4 var(--sans); letter-spacing: .035em; }
