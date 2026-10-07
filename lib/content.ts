@@ -84,6 +84,7 @@ export const collaborators = [
 ] as const;
 
 export const newsItems = [
+  { date: 'October 6, 2026', label: 'Talk', title: 'A sharp extension of Halin’s removable-edge theorem to matchings', href: 'https://drive.google.com/file/d/1OIUqI1T81gXDRJycYkziqGsTpxbUd1IO/view', text: 'I gave an invited talk at the Combinatorics Seminar at Hanyang University in Seoul.' },
   { date: 'August 2026', label: 'Preprint', title: 'Connectivity keeping paths in digraphs', href: 'https://arxiv.org/abs/2608.25240', text: 'A new preprint on connectivity-keeping paths in digraphs is now available on arXiv, in joint work with Boram Park and Homoon Ryu.' },
   { date: 'August 2026', label: 'Talk', title: 'Cycles modulo 3 and 4: Extremal and Structural results', href: 'https://drive.google.com/file/d/1AoXRmWYkuGq2Po5zOUFlAnzs3IrS_qRY/view?usp=sharing', text: 'I gave an invited talk on cycles modulo 3 and 4 at the One-Day Workshop on Graph Theory at Seoul National University.' },
   { date: 'August 2026', label: 'Preprint', title: "A sharp extension of Halin's removable-edge theorem to matchings", href: 'https://arxiv.org/abs/2608.09394', text: 'A new manuscript presenting a sharp extension of Halin’s removable-edge theorem to matchings is now available on arXiv.' },
