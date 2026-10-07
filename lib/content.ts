@@ -41,7 +41,6 @@ export const published = [
 ] as const;
 
 export const upcomingTalks = [
-  { type: 'Invited', event: 'Combinatorics Seminar at HY', eventUrl: 'https://sites.google.com/view/hy-combinatorics-seminar', date: 'Oct 6, 2026', place: 'Hanyang University, Seoul, Korea', title: 'A sharp extension of Halin’s removable-edge theorem to matchings', deck: '' },
   { type: 'Contributed', event: '2026 Combinatorics Workshop', eventUrl: 'https://cw2026.combinatorics.kr/', date: 'Oct 20–22, 2026', place: 'Konjiam Resort, Gwangju-si, Korea', title: 'Minimum degree conditions for removable matchings in k-connected graphs', deck: '' },
   { type: 'Contributed', session: '(DM) Discrete Mathematics', event: '2026 KMS Annual Meeting', eventUrl: 'https://www.kms.or.kr/conference/2026_fall/', date: 'Oct 29–31, 2026', place: 'Gwangju Institute of Science and Technology (GIST)', title: 'On reconfiguration graphs induced by rainbow spanning trees', deck: '' },
 ] as const;
@@ -54,6 +53,7 @@ export const internationalTalks = [
 ] as const;
 
 export const domesticTalks = [
+  { type: 'Invited', event: 'Combinatorics Seminar at HY', eventUrl: 'https://sites.google.com/view/hy-combinatorics-seminar', date: 'Oct 6, 2026', place: 'Hanyang University, Seoul, Korea', title: 'A sharp extension of Halin’s removable-edge theorem to matchings', deck: 'https://drive.google.com/file/d/1OIUqI1T81gXDRJycYkziqGsTpxbUd1IO/view' },
   { type: 'Invited', event: 'One-Day Workshop on Graph Theory', eventUrl: '', date: 'Aug 21, 2026', place: 'Seoul National University', title: 'Cycles modulo 3 and 4: Extremal and Structural results', deck: 'https://drive.google.com/file/d/1AoXRmWYkuGq2Po5zOUFlAnzs3IrS_qRY/view?usp=sharing' },
   { type: 'Invited', event: '35th KIAS Combinatorics Workshop', eventUrl: 'https://events.kias.re.kr/h/combinatorics/?pageNo=6104', date: 'Dec 18–20, 2025', place: 'Busan, Korea', title: 'Connectivity keeping subgraph deletion problem', deck: 'https://drive.google.com/file/d/1cNTBKQgZ7_JPj34H5ZQPSoQYpHX8mF9e/view?usp=drive_link' },
   { type: 'Invited', event: 'KPPY 100 (Young Seminar)', eventUrl: 'https://kppy.siggers.work/kppy-100/', date: 'Sep 19–21, 2025', place: 'Gyeongju, Korea', title: 'On 2-connected graphs avoiding cycles of length 0 modulo 4', deck: 'https://drive.google.com/file/d/1cSAUaZkc0uDMoJsBLSUG8HkseWFWjeU9/view?usp=drive_link' },

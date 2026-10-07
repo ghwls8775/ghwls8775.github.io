@@ -20,7 +20,7 @@ export default function Home() {
               <p className="hero-body">I enjoy connecting with people 😁 Feel free to <a href="mailto:hojinchu@kias.re.kr">e-mail me</a> if you&apos;d like to discuss research topics.</p>
               <div className="hero-actions">
                 <a className="button button-primary" href="/research/">Explore my research <span>↘</span></a>
-                <a className="button" href="https://drive.google.com/file/d/1B_hkg5rX56hav1dFVP-390paRex50XrZ/view?usp=sharing" target="_blank" rel="noreferrer">CV · revised May 2026 <span>↗</span></a>
+                <a className="button" href="https://drive.google.com/file/d/1B_hkg5rX56hav1dFVP-390paRex50XrZ/view?usp=sharing" target="_blank" rel="noreferrer">CV · revised Oct 7, 2026 <span>↗</span></a>
               </div>
             </div>
             <figure className="portrait-wrap">
