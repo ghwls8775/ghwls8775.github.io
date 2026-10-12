@@ -15,20 +15,9 @@ export default function Home() {
               <p className="eyebrow"><span /> Research Fellow · KIAS</p>
               <h1>Hojin Chu</h1>
               <p className="hero-lede">Hello, thank you for visiting my website !</p>
-              <p className="hero-body">
-                <span className="desktop-copy-line">I&apos;m <strong>Hojin Chu (추호진)</strong>, a research fellow in the School of Computational Sciences at the <a href="https://www.kias.re.kr/kias/main/main.do" target="_blank" rel="noreferrer">Korea Institute for Advanced Study (KIAS)</a>.</span>{' '}
-                <span className="desktop-copy-line">(Mentor : Prof. Jeong Han Kim)</span>
-              </p>
-              <p className="hero-body">
-                <span className="desktop-copy-line">My research interests are Combinatorics, Graph Theory, and Combinatorial Matrix Theory,</span>{' '}
-                <span className="desktop-copy-line">with a particular interest in <strong>Extremal and Structural Graph Theory</strong>.</span>{' '}
-                <span className="desktop-copy-line">My research has been focused on advancing the theoretical foundations of graph theory</span>{' '}
-                <span className="desktop-copy-line">and exploring graph structures and their properties.</span>
-              </p>
-              <p className="hero-body">
-                <span className="desktop-copy-line">I enjoy connecting with people 😁</span>{' '}
-                <span className="desktop-copy-line">Feel free to <a href="mailto:hojinchu@kias.re.kr">e-mail me</a> if you&apos;d like to discuss research topics.</span>
-              </p>
+              <p className="hero-body">I&apos;m <strong>Hojin Chu (추호진)</strong>, a research fellow in the School of Computational Sciences at the <a href="https://www.kias.re.kr/kias/main/main.do" target="_blank" rel="noreferrer">Korea Institute for Advanced Study (KIAS)</a>. (Mentor : Prof. Jeong Han Kim)</p>
+              <p className="hero-body">My research interests are Combinatorics, Graph Theory, and Combinatorial Matrix Theory, with a particular interest in <strong>Extremal and Structural Graph Theory</strong>. My research has been focused on advancing the theoretical foundations of graph theory and exploring graph structures and their properties.</p>
+              <p className="hero-body">I enjoy connecting with people 😁 Feel free to <a href="mailto:hojinchu@kias.re.kr">e-mail me</a> if you&apos;d like to discuss research topics.</p>
               <div className="hero-actions">
                 <a className="button button-primary" href="/research/">Explore my research <span>↘</span></a>
                 <a className="button" href="https://drive.google.com/file/d/1B_hkg5rX56hav1dFVP-390paRex50XrZ/view?usp=sharing" target="_blank" rel="noreferrer">CV · revised Oct 7, 2026 <span>↗</span></a>

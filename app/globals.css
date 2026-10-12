@@ -107,8 +107,7 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
 .section-heading > p { margin: 0; color: var(--muted); font: 17px / 1.7 var(--display); }
 @media (min-width: 1000px) {
   .research-intro-line { display: block; white-space: nowrap; }
-  .desktop-copy-line { display: block; }
-  .about-intro .page-intro-copy { grid-column: 1 / -1; }
+  .about-intro-sentence { display: block; }
 }
 .focus-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--line); background: var(--surface); }
 .focus-card { min-width: 0; min-height: 336px; padding: 30px; border-right: 1px solid var(--line); }

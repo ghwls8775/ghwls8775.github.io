@@ -1,9 +1,9 @@
 import { GraphField } from './graph-field';
 import type { ReactNode } from 'react';
 
-export function PageIntro({ eyebrow, title, accent, children, className = '' }: { eyebrow: string; title: string; accent?: string; children: ReactNode; className?: string }) {
+export function PageIntro({ eyebrow, title, accent, children }: { eyebrow: string; title: string; accent?: string; children: ReactNode }) {
   return (
-    <section className={`page-intro ${className}`.trim()} id="top">
+    <section className="page-intro" id="top">
       <GraphField compact />
       <div className="page-shell page-intro-inner">
         <p className="kicker">{eyebrow}</p>
