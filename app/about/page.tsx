@@ -20,8 +20,11 @@ export default function AboutPage() {
     <>
       <SiteHeader active="about" />
       <main>
-        <PageIntro eyebrow="About" title="Mathematics through" accent="structure & people.">
-          <p>I am a research fellow at the Korea Institute for Advanced Study. My work sits at the intersection of combinatorics, graph theory, and combinatorial matrix theory.</p>
+        <PageIntro eyebrow="About" title="Mathematics through" accent="structure & people." className="about-intro">
+          <p>
+            <span className="desktop-copy-line">I am a research fellow at the Korea Institute for Advanced Study.</span>{' '}
+            <span className="desktop-copy-line">My work sits at the intersection of combinatorics, graph theory, and combinatorial matrix theory.</span>
+          </p>
         </PageIntro>
 
         <section className="content-section page-shell about-overview">
@@ -68,7 +71,10 @@ export default function AboutPage() {
           <div className="beyond-copy">
             <p className="kicker">Beyond papers</p>
             <h2>Graphs connect more than <em>vertices.</em></h2>
-            <p>I enjoy connecting with people and sharing mathematics outside the usual seminar room. I am also an avid climber, always looking for another route—and another way to think about structure.</p>
+            <p>
+              <span className="desktop-copy-line">I enjoy connecting with people and sharing mathematics outside the usual seminar room.</span>{' '}
+              <span className="desktop-copy-line">I am also an avid climber, always looking for another route—and another way to think about structure.</span>
+            </p>
             <div className="review-note"><h3>Review Activities</h3><p>SIDMA · Discrete Mathematics · Discrete Applied Mathematics · Discussiones Mathematicae Graph Theory · FOCS 2026 · Ars Combinatoria</p></div>
           </div>
           <div className="video-card">
