@@ -41,7 +41,6 @@ export const published = [
 ] as const;
 
 export const upcomingTalks = [
-  { type: 'Contributed', event: '2026 Combinatorics Workshop', eventUrl: 'https://cw2026.combinatorics.kr/', date: 'Oct 20–22, 2026', place: 'Konjiam Resort, Gwangju-si, Korea', title: 'Minimum degree conditions for removable matchings in k-connected graphs', deck: '' },
   { type: 'Contributed', session: '(DM) Discrete Mathematics', event: '2026 KMS Annual Meeting', eventUrl: 'https://www.kms.or.kr/conference/2026_fall/', date: 'Oct 29–31, 2026', place: 'Gwangju Institute of Science and Technology (GIST)', title: 'On reconfiguration graphs induced by rainbow spanning trees', deck: '' },
 ] as const;
 
@@ -53,6 +52,7 @@ export const internationalTalks = [
 ] as const;
 
 export const domesticTalks = [
+  { type: 'Contributed', event: '2026 Combinatorics Workshop', eventUrl: 'https://cw2026.combinatorics.kr/', date: 'Oct 21, 2026', place: 'Konjiam Resort, Gwangju-si, Korea', title: 'Minimum degree conditions for removable matchings in k-connected graphs', deck: 'https://drive.google.com/file/d/1qiTYhaUKZAwnybgBVrmcKAZSnQugPpl1/view' },
   { type: 'Invited', event: 'Combinatorics Seminar at HY', eventUrl: 'https://sites.google.com/view/hy-combinatorics-seminar', date: 'Oct 6, 2026', place: 'Hanyang University, Seoul, Korea', title: 'A sharp extension of Halin’s removable-edge theorem to matchings', deck: 'https://drive.google.com/file/d/1OIUqI1T81gXDRJycYkziqGsTpxbUd1IO/view' },
   { type: 'Invited', event: 'One-Day Workshop on Graph Theory', eventUrl: '', date: 'Aug 21, 2026', place: 'Seoul National University', title: 'Cycles modulo 3 and 4: Extremal and Structural results', deck: 'https://drive.google.com/file/d/1AoXRmWYkuGq2Po5zOUFlAnzs3IrS_qRY/view?usp=sharing' },
   { type: 'Invited', event: '35th KIAS Combinatorics Workshop', eventUrl: 'https://events.kias.re.kr/h/combinatorics/?pageNo=6104', date: 'Dec 22–24, 2025', place: 'Busan, Korea', title: 'Connectivity keeping subgraph deletion problem', deck: 'https://drive.google.com/file/d/1cNTBKQgZ7_JPj34H5ZQPSoQYpHX8mF9e/view?usp=drive_link' },
@@ -84,6 +84,7 @@ export const collaborators = [
 ] as const;
 
 export const newsItems = [
+  { date: 'October 21, 2026', label: 'Talk', title: 'Minimum degree conditions for removable matchings in k-connected graphs', href: 'https://drive.google.com/file/d/1qiTYhaUKZAwnybgBVrmcKAZSnQugPpl1/view', text: 'I gave a contributed talk at the 2026 Combinatorics Workshop at Konjiam Resort in Gwangju-si, Korea.' },
   { date: 'October 6, 2026', label: 'Talk', title: 'A sharp extension of Halin’s removable-edge theorem to matchings', href: 'https://drive.google.com/file/d/1OIUqI1T81gXDRJycYkziqGsTpxbUd1IO/view', text: 'I gave an invited talk at the Combinatorics Seminar at Hanyang University in Seoul.' },
   { date: 'August 2026', label: 'Preprint', title: 'Connectivity keeping paths in digraphs', href: 'https://arxiv.org/abs/2608.25240', text: 'A new preprint on connectivity-keeping paths in digraphs is now available on arXiv, in joint work with Boram Park and Homoon Ryu.' },
   { date: 'August 2026', label: 'Talk', title: 'Cycles modulo 3 and 4: Extremal and Structural results', href: 'https://drive.google.com/file/d/1AoXRmWYkuGq2Po5zOUFlAnzs3IrS_qRY/view?usp=sharing', text: 'I gave an invited talk on cycles modulo 3 and 4 at the One-Day Workshop on Graph Theory at Seoul National University.' },
