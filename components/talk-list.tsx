@@ -7,6 +7,7 @@ type Talk = {
   readonly eventUrl: string;
   readonly date: string;
   readonly place: string;
+  readonly placeBreakBeforeCity?: boolean;
   readonly title: string;
   readonly deck: string;
 };
@@ -19,7 +20,18 @@ export function TalkList({ items }: { items: readonly Talk[] }) {
           className={`talk-row${talk.type === 'Invited' || talk.type === 'Minisymposium' ? ' talk-row--featured' : ''}`}
           key={`${talk.date}-${talk.title}`}
         >
-          <div className="talk-meta"><span>{talk.type}</span><time>{talk.date}</time><small>{talk.place}</small></div>
+          <div className="talk-meta">
+            <span>{talk.type}</span>
+            <time>{talk.date}</time>
+            <small>
+              {talk.placeBreakBeforeCity ? (
+                <>
+                  {talk.place.split(', ')[0]},<br />
+                  {talk.place.split(', ').slice(1).join(', ')}
+                </>
+              ) : talk.place}
+            </small>
+          </div>
           <div className="talk-main">
             <h3>{talk.eventUrl ? <ExternalLink href={talk.eventUrl}>{talk.event}</ExternalLink> : talk.event}</h3>
             {talk.session && <p className="talk-session">Session · {talk.session}</p>}
