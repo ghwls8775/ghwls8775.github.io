@@ -84,9 +84,42 @@ export const collaborators = [
   ['Homoon Ryu', 'https://hmryu.com/'],
 ] as const;
 
-export const newsItems = [
+type NewsItem = {
+  date: string;
+  dateTime?: string;
+  label: string;
+  title: string;
+  href: string;
+  text: string;
+  image?: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+    href?: string;
+    caption?: string;
+  };
+};
+
+export const newsItems: readonly NewsItem[] = [
   { date: 'October 21, 2026', label: 'Talk', title: 'Minimum degree conditions for removable matchings in k-connected graphs', href: 'https://drive.google.com/file/d/1qiTYhaUKZAwnybgBVrmcKAZSnQugPpl1/view', text: 'I gave a contributed talk at the 2026 Combinatorics Workshop at Konjiam Resort in Gwangju-si, Korea.' },
   { date: 'October 6, 2026', label: 'Talk', title: 'A sharp extension of Halin’s removable-edge theorem to matchings', href: 'https://drive.google.com/file/d/1OIUqI1T81gXDRJycYkziqGsTpxbUd1IO/view', text: 'I gave an invited talk at the Combinatorics Seminar at Hanyang University in Seoul.' },
+  {
+    date: 'September 28, 2026',
+    dateTime: '2026-09-28',
+    label: 'Symposium',
+    title: 'Moderator at the KIAS 30th Anniversary Symposium',
+    href: 'https://sites.google.com/view/kias30th/symposium',
+    text: 'I served as moderator for “AI and Collective Intelligence: Between Mediation, Emergence, and Agency,” the KIAS 30th Anniversary Symposium held at KIAS in Seoul.',
+    image: {
+      src: '/news/kias-30th-anniversary-symposium-2026.jpg',
+      alt: 'KIAS 30th Anniversary Symposium poster, September 28, 2026, listing Hojin Chu as moderator',
+      width: 1280,
+      height: 1793,
+      href: '/news/kias-30th-anniversary-symposium-2026.jpg',
+      caption: 'Official KIAS symposium poster. Select to view full size.',
+    },
+  },
   { date: 'August 2026', label: 'Preprint', title: 'Connectivity keeping paths in digraphs', href: 'https://arxiv.org/abs/2608.25240', text: 'A new preprint on connectivity-keeping paths in digraphs is now available on arXiv, in joint work with Boram Park and Homoon Ryu.' },
   { date: 'August 2026', label: 'Talk', title: 'Cycles modulo 3 and 4: Extremal and Structural results', href: 'https://drive.google.com/file/d/1AoXRmWYkuGq2Po5zOUFlAnzs3IrS_qRY/view?usp=sharing', text: 'I gave an invited talk on cycles modulo 3 and 4 at the One-Day Workshop on Graph Theory at Seoul National University.' },
   { date: 'August 2026', label: 'Preprint', title: "A sharp extension of Halin's removable-edge theorem to matchings", href: 'https://arxiv.org/abs/2608.09394', text: 'A new manuscript presenting a sharp extension of Halin’s removable-edge theorem to matchings is now available on arXiv.' },

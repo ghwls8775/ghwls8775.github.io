@@ -16,12 +16,22 @@ export default function NewsPage() {
           <p>New preprints, conference presentations, and other research updates, listed from the most recent.</p>
         </PageIntro>
         <section className="content-section page-shell news-list">
-          {newsItems.map((item, index) => (
-            <article className="news-row" key={`${item.date}-${item.title}`}>
-              <div className="news-index">{String(index + 1).padStart(2, '0')}</div>
-              <div className="news-date"><time>{item.date}</time><span>{item.label}</span></div>
-              <div className="news-content"><p className="news-summary">{item.text}</p><h2 className="news-title"><ExternalLink href={item.href}>{item.title}</ExternalLink></h2></div>
-              <ExternalLink className="news-arrow" href={item.href} aria-label={`Open ${item.title}`}>↗</ExternalLink>
+          {newsItems.map((item) => (
+            <article className={`news-article${item.image ? ' news-article--illustrated' : ''}`} key={`${item.date}-${item.title}`}>
+              <div className="news-content">
+                <div className="news-meta"><span>{item.label}</span><time dateTime={item.dateTime}>{item.date}</time></div>
+                <h2 className="news-title"><ExternalLink href={item.href}>{item.title}</ExternalLink></h2>
+                <p className="news-summary">{item.text}</p>
+                <ExternalLink className="news-source" href={item.href} aria-label={`Open source for ${item.title}`}>View {item.label === 'Preprint' ? 'preprint' : item.label === 'Talk' ? 'talk' : 'event'} <span aria-hidden="true">↗</span></ExternalLink>
+              </div>
+              {item.image && (
+                <figure className="news-figure">
+                  <ExternalLink href={item.image.href ?? item.href} aria-label={`View ${item.image.alt}`}>
+                    <img src={item.image.src} alt={item.image.alt} width={item.image.width} height={item.image.height} loading="lazy" decoding="async" />
+                  </ExternalLink>
+                  {item.image.caption && <figcaption>{item.image.caption}</figcaption>}
+                </figure>
+              )}
             </article>
           ))}
         </section>
