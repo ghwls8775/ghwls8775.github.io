@@ -38,7 +38,7 @@ export default function AboutPage() {
           <div className="about-details">
             <p className="kicker">Current position</p>
             <h2>Research Fellow</h2>
-            <p className="large-copy">School of Computational Sciences<br/><ExternalLink href="https://www.kias.re.kr/kias/main/main.do">Korea Institute for Advanced Study (KIAS)</ExternalLink></p>
+            <p className="large-copy">School of Computational Sciences<br/><span className="institution-line"><img className="institution-mark institution-mark--kias" src="/institutions/kias-symbol.png" alt="KIAS symbol" width="512" height="461" /><ExternalLink href="https://www.kias.re.kr/kias/main/main.do">Korea Institute for Advanced Study (KIAS)</ExternalLink></span></p>
             <p className="address-copy">85 Hoegi-ro, Dongdaemun-gu, Seoul<br/>Bldg. 1 · Room 1534</p>
 
             <div className="education-block">
