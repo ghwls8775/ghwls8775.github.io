@@ -17,7 +17,7 @@ export default function NewsPage() {
         </PageIntro>
         <section className="content-section page-shell news-list">
           {newsItems.map((item) => (
-            <article className={`news-article${item.image ? ' news-article--illustrated' : ''}`} key={`${item.date}-${item.title}`}>
+            <article className={`news-article${item.image ? ' news-article--illustrated' : ''}${item.image?.kind ? ' news-article--wide-image' : ''}`} key={`${item.date}-${item.title}`}>
               <div className="news-content">
                 <div className="news-meta"><span>{item.label}</span><time dateTime={item.dateTime}>{item.date}</time></div>
                 <h2 className="news-title"><ExternalLink href={item.href}>{item.title}</ExternalLink></h2>
@@ -29,7 +29,12 @@ export default function NewsPage() {
                   <ExternalLink href={item.image.href ?? item.href} aria-label={`View ${item.image.alt}`}>
                     <img src={item.image.src} alt={item.image.alt} width={item.image.width} height={item.image.height} loading="lazy" decoding="async" />
                   </ExternalLink>
-                  {item.image.caption && <figcaption>{item.image.caption}</figcaption>}
+                  {(item.image.caption || item.image.sourceUrl) && (
+                    <figcaption>
+                      {item.image.caption && <span>{item.image.caption}</span>}
+                      {item.image.sourceUrl && <ExternalLink href={item.image.sourceUrl}>Source: {item.image.credit} ↗</ExternalLink>}
+                    </figcaption>
+                  )}
                 </figure>
               )}
             </article>
