@@ -20,6 +20,7 @@ export const focusAreas = [
 ];
 
 export const preprints = [
+  ['On strong odd colorings of sparse graphs', 'with Ilkyoo Choi', 'https://arxiv.org/abs/2610.34874', '2610.34874'],
   ['Connectivity keeping paths in digraphs', 'with Boram Park, Homoon Ryu', 'https://arxiv.org/abs/2608.25240', '2608.25240'],
   ["A sharp extension of Halin's removable-edge theorem to matchings", '', 'https://arxiv.org/abs/2608.09394', '2608.09394'],
   ['Minimum degree conditions for removable matchings in k-connected graphs', 'with Ringi Kim, Boram Park', 'https://arxiv.org/abs/2607.17533', '2607.17533'],
