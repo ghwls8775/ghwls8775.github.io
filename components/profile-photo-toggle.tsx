@@ -27,7 +27,7 @@ export function ProfilePhotoToggle() {
       type="button"
       variant="ghost"
       className={`about-photo-toggle${showPrevious ? ' show-previous' : ''}`}
-      aria-label={isPreviousPinned ? 'Show current portrait' : 'Show previous portrait'}
+      aria-label={isPreviousPinned ? 'Show current portrait of Hojin Chu' : 'Show previous portrait of Hojin Chu'}
       aria-pressed={isPreviousPinned}
       onPointerEnter={(event) => {
         if (event.pointerType === 'mouse') {
@@ -43,7 +43,7 @@ export function ProfilePhotoToggle() {
       <img
         className="about-photo-current"
         src="/hojin-chu-main.jpg"
-        alt=""
+        alt="Portrait of Hojin Chu"
         width="1181"
         height="1575"
         loading="lazy"
@@ -57,9 +57,6 @@ export function ProfilePhotoToggle() {
         loading="lazy"
         aria-hidden="true"
       />
-      <span className="photo-switch-hint" aria-hidden="true">
-        {isPreviousPinned ? 'Previous · tap to return' : showPrevious ? 'Previous portrait' : 'Hover or tap'}
-      </span>
     </Button>
   );
 }

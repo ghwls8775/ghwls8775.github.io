@@ -52,7 +52,6 @@ export default function Home() {
             ))}
           </div>
           <div className="section-cta">
-            <p>Publications, preprints, collaborators, and open-problem resources.</p>
             <a className="text-link" href="/research/">View all research <span>↗</span></a>
           </div>
         </section>

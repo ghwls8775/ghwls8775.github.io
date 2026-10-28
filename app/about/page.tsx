@@ -1,5 +1,4 @@
 import { ExternalLink } from '@/components/external-link';
-import { PageIntro } from '@/components/page-intro';
 import { ProfilePhotoToggle } from '@/components/profile-photo-toggle';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
@@ -19,21 +18,11 @@ export default function AboutPage() {
   return (
     <>
       <SiteHeader active="about" />
-      <main>
-        <PageIntro eyebrow="About" title="Mathematics through" accent="structure & people.">
-          <p>
-            <span className="about-intro-sentence">I am a research fellow at the Korea Institute for Advanced Study.</span>{' '}
-            <span className="about-intro-sentence">My work sits at the intersection of combinatorics, graph theory, and combinatorial matrix theory.</span>
-          </p>
-        </PageIntro>
-
-        <section className="content-section page-shell about-overview">
+      <main id="top">
+        <h1 className="sr-only">About</h1>
+        <section className="content-section content-start page-shell about-overview">
           <figure className="about-photo">
             <ProfilePhotoToggle />
-            <figcaption>
-              <span>Hojin Chu · 추호진</span>
-              <span>Hover or tap to view the previous portrait</span>
-            </figcaption>
           </figure>
           <div className="about-details">
             <p className="kicker">Current position</p>

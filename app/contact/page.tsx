@@ -1,5 +1,4 @@
 import { ExternalLink } from '@/components/external-link';
-import { PageIntro } from '@/components/page-intro';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
 import { pageMetadata } from '@/lib/metadata';
@@ -8,14 +7,11 @@ export const metadata = pageMetadata('Contact | Hojin Chu', 'Contact Hojin Chu a
 
 export default function ContactPage() {
   return (
-    <>
+    <div className="contact-page">
       <SiteHeader active="contact" />
-      <main>
-        <PageIntro eyebrow="Contact" title="Let’s find the next" accent="connection.">
-          <p>Feel free to email me if you would like to discuss a research topic, a problem, or a possible collaboration.</p>
-        </PageIntro>
-
-        <section className="content-section page-shell contact-grid">
+      <main id="top">
+        <h1 className="sr-only">Contact</h1>
+        <section className="content-section content-start page-shell contact-grid">
           <div className="contact-main">
             <p className="kicker">Email</p>
             <a className="email-link" href="mailto:hojinchu@kias.re.kr">hojinchu@kias.re.kr <span>↗</span></a>
@@ -28,6 +24,6 @@ export default function ContactPage() {
         </section>
       </main>
       <SiteFooter />
-    </>
+    </div>
   );
 }

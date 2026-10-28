@@ -12,7 +12,7 @@ export default function ResearchPage() {
     <>
       <SiteHeader active="research" />
       <main>
-        <PageIntro eyebrow="Research" title="Questions about" accent="structure.">
+        <PageIntro title="Research" graph>
           <p>I study structural graph theory and discrete mathematics, focusing on cycles, connectivity-preserving deletion, common-neighbor problems in digraphs, and graph-based algorithms.</p>
         </PageIntro>
 

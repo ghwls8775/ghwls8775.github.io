@@ -1,15 +1,14 @@
 import { GraphField } from './graph-field';
 import type { ReactNode } from 'react';
 
-export function PageIntro({ eyebrow, title, accent, children }: { eyebrow: string; title: string; accent?: string; children: ReactNode }) {
+export function PageIntro({ title, graph = false, children }: { title: string; graph?: boolean; children: ReactNode }) {
   return (
-    <section className="page-intro" id="top">
-      <GraphField compact />
-      <div className="page-shell page-intro-inner">
-        <p className="kicker">{eyebrow}</p>
-        <h1>{title}{accent && <> <em>{accent}</em></>}</h1>
-        <div className="page-intro-copy">{children}</div>
+    <header className={`page-intro${graph ? ' page-intro--graph' : ''}`} id="top">
+      {graph && <GraphField compact />}
+      <div className="page-shell posts-header page-intro-inner">
+        <h1>{title}<span aria-hidden="true">.</span></h1>
+        {children}
       </div>
-    </section>
+    </header>
   );
 }

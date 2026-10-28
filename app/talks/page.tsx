@@ -20,7 +20,7 @@ export default function TalksPage() {
     <>
       <SiteHeader active="talks" />
       <main>
-        <PageIntro eyebrow="Talks" title="Sharing ideas," accent="building links.">
+        <PageIntro title="Talks">
           <p>I present my work at international conferences, combinatorics workshops, seminars, and public programs that bring graph theory to wider audiences.</p>
         </PageIntro>
 
