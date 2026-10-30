@@ -11,7 +11,7 @@ const profileLinks = [
   { href: 'https://arxiv.org/a/0000-0002-0484-9496.html', label: 'arXiv', Icon: BookOpenText },
   { href: 'https://scholar.google.com/citations?user=14-ziHgAAAAJ', label: 'Google Scholar', Icon: GraduationCap },
   { href: 'https://www.researchgate.net/profile/Hojin-Chu', label: 'ResearchGate', Icon: Network },
-  { href: 'https://drive.google.com/file/d/1B_hkg5rX56hav1dFVP-390paRex50XrZ/view?usp=sharing', label: 'Curriculum vitae', Icon: FileUser },
+  { href: '/hojin-chu-cv.pdf', label: 'Curriculum vitae', Icon: FileUser },
 ] as const;
 
 export default function AboutPage() {
