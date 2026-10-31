@@ -25,10 +25,12 @@ export default function TalksPage() {
         </PageIntro>
 
         <section className="content-section page-shell talks-page">
-          <div className="talk-group talk-group--upcoming">
-            <div className="list-title"><h2>Upcoming talks</h2><span>{String(upcomingTalks.length).padStart(2, '0')}</span></div>
-            <TalkList items={upcomingTalks} />
-          </div>
+          {upcomingTalks.length > 0 && (
+            <div className="talk-group talk-group--upcoming">
+              <div className="list-title"><h2>Upcoming talks</h2><span>{String(upcomingTalks.length).padStart(2, '0')}</span></div>
+              <TalkList items={upcomingTalks} />
+            </div>
+          )}
           <div className="talk-group talk-group--international">
             <div className="list-title"><h2>International presentations</h2><span>{String(internationalTalks.length).padStart(2, '0')}</span></div>
             <TalkList items={internationalTalks} />

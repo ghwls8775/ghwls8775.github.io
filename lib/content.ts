@@ -41,9 +41,7 @@ export const published = [
   ['Competition graphs of degree bounded digraphs', 'with Suh-Ryung Kim', 'Discrete Applied Mathematics, 343:106–114 (2024)', 'https://www.sciencedirect.com/science/article/pii/S0166218X23003840?via%3Dihub', 'https://arxiv.org/abs/2307.11625'],
 ] as const;
 
-export const upcomingTalks = [
-  { type: 'Contributed', session: '(DM) Discrete Mathematics', event: '2026 KMS Annual Meeting', eventUrl: 'https://www.kms.or.kr/conference/2026_fall/', date: 'Oct 29–31, 2026', place: 'GIST, Gwangju, Korea', title: 'On reconfiguration graphs induced by rainbow spanning trees', deck: '' },
-] as const;
+export const upcomingTalks = [] as const;
 
 export const internationalTalks = [
   { type: 'Contributed', event: 'SIAM Conference on Discrete Mathematics (DM26)', eventUrl: 'https://www.siam.org/conferences-events/siam-conferences/dm26/', date: 'June 22–25, 2026', place: 'University of California San Diego, San Diego, United States', placeBreakBeforeCity: true, title: 'Connectivity keeping trees in triangle-free graphs', deck: 'https://drive.google.com/file/d/13PMlAw3kh6Eb_vCJ7uAhFVih5w_2Uu0q/view?usp=sharing' },
@@ -53,6 +51,7 @@ export const internationalTalks = [
 ] as const;
 
 export const domesticTalks = [
+  { type: 'Contributed', session: '(DM) Discrete Mathematics', event: '2026 KMS Annual Meeting', eventUrl: 'https://www.kms.or.kr/conference/2026_fall/', date: 'Oct 29–31, 2026', place: 'GIST, Gwangju, Korea', title: 'On reconfiguration graphs induced by rainbow spanning trees', deck: '' },
   { type: 'Contributed', event: '2026 Combinatorics Workshop', eventUrl: 'https://cw2026.combinatorics.kr/', date: 'Oct 21, 2026', place: 'Konjiam Resort, Gwangju-si, Korea', title: 'Minimum degree conditions for removable matchings in k-connected graphs', deck: 'https://drive.google.com/file/d/1qiTYhaUKZAwnybgBVrmcKAZSnQugPpl1/view' },
   { type: 'Invited', event: 'Combinatorics Seminar at HY', eventUrl: 'https://sites.google.com/view/hy-combinatorics-seminar', date: 'Oct 6, 2026', place: 'Hanyang University, Seoul, Korea', title: 'A sharp extension of Halin’s removable-edge theorem to matchings', deck: 'https://drive.google.com/file/d/1OIUqI1T81gXDRJycYkziqGsTpxbUd1IO/view' },
   { type: 'Invited', event: 'One-Day Workshop on Graph Theory', eventUrl: '', date: 'Aug 21, 2026', place: 'Seoul National University, Seoul, Korea', title: 'Cycles modulo 3 and 4: Extremal and Structural results', deck: 'https://drive.google.com/file/d/1AoXRmWYkuGq2Po5zOUFlAnzs3IrS_qRY/view?usp=sharing' },
