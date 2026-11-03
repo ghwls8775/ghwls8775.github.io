@@ -4,7 +4,7 @@ import { SiteHeader } from '@/components/site-header';
 import { newsItems } from '@/lib/content';
 import { pageMetadata } from '@/lib/metadata';
 
-export const metadata = pageMetadata('News | Hojin Chu', 'Recent preprints, conference presentations, and research updates from Hojin Chu.', '/news/');
+export const metadata = pageMetadata('News | Hojin Chu', 'Recent manuscripts, conference presentations, and research updates from Hojin Chu.', '/news/');
 
 function NewsPost({ item, featured = false }: { item: (typeof newsItems)[number]; featured?: boolean }) {
   return (
@@ -40,7 +40,7 @@ export default function NewsPage() {
       <main>
         <header className="posts-header page-shell" id="top">
           <h1>News<span aria-hidden="true">.</span></h1>
-          <p>New preprints, conference presentations, and other research updates, listed from the most recent.</p>
+          <p>New manuscripts, conference presentations, and other research updates, listed from the most recent.</p>
         </header>
         <div className="posts page-shell">
           {latest && <NewsPost item={latest} featured />}

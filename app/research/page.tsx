@@ -5,7 +5,7 @@ import { SiteHeader } from '@/components/site-header';
 import { collaborators, preprints, published } from '@/lib/content';
 import { pageMetadata } from '@/lib/metadata';
 
-export const metadata = pageMetadata('Research | Hojin Chu', 'Publications and preprints in structural graph theory, digraphs, combinatorics, and combinatorial matrix theory.', '/research/');
+export const metadata = pageMetadata('Research | Hojin Chu', 'Publications and submitted manuscripts in structural graph theory, digraphs, combinatorics, and combinatorial matrix theory.', '/research/');
 
 export default function ResearchPage() {
   return (
@@ -18,7 +18,7 @@ export default function ResearchPage() {
 
         <section className="content-section page-shell publications">
           <div className="section-heading compact">
-            <div><p className="kicker">Research output</p><h2 className="publications-title">Publications & <em>preprints.</em></h2></div>
+            <div><p className="kicker">Research output</p><h2 className="publications-title">Publications & <em>submissions.</em></h2></div>
           </div>
           <div className="pub-columns">
             <div>
@@ -36,7 +36,7 @@ export default function ResearchPage() {
                         <p className="paper-grant">
                           For this research, I received a <strong>grant</strong> (with the same title) from{' '}
                           <strong><em>Basic Science Research Program, National Research Foundation of Korea</em></strong>{' '}
-                          (KRW <strong>20,000,000</strong>).
+                          (KRW <strong>20,000,000</strong>, approximately USD <strong>15,000</strong>).
                         </p>
                       )}
                     </div>
@@ -45,7 +45,7 @@ export default function ResearchPage() {
               </ol>
             </div>
             <div>
-              <div className="list-title"><h3>Submitted & preprints</h3><span>{preprints.length}</span></div>
+              <div className="list-title"><h3>Submitted</h3><span>{preprints.length}</span></div>
               <ol className="paper-list">
                 {preprints.map(([title, authors, href, id], index) => (
                   <li key={title}>
@@ -55,6 +55,10 @@ export default function ResearchPage() {
                 ))}
               </ol>
             </div>
+          </div>
+          <div className="publication-note">
+            <h3>Research funding</h3>
+            <p>KIAS Individual Grant (CG101801), March 2025–February 2027: KRW 20,000,000 total (approximately USD 15,000).</p>
           </div>
           <div className="publication-note">
             <ExternalLink className="dissertation-link" href="https://drive.google.com/file/d/1jADoKiArPaAjDPCu2aVpSZJRHVgfXWFv/view?usp=drive_link">

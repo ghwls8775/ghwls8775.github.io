@@ -6,7 +6,7 @@ import { TalkList } from '@/components/talk-list';
 import { domesticTalks, internationalTalks, publicTalks, upcomingTalks } from '@/lib/content';
 import { pageMetadata } from '@/lib/metadata';
 
-export const metadata = pageMetadata('Talks | Hojin Chu', 'International, domestic, and public presentations by graph theorist Hojin Chu.', '/talks/');
+export const metadata = pageMetadata('Talks | Hojin Chu', 'Invited, contributed, and public presentations by graph theorist Hojin Chu.', '/talks/');
 
 const talkMoments = [
   { src: '/talks/ilas-2025-talk.jpg', width: 1280, height: 759, caption: 'Photo from my talk at ILAS 2025' },
@@ -14,6 +14,12 @@ const talkMoments = [
   { src: '/talks/canadam-2025-group.jpg', width: 1280, height: 751, caption: 'Group photo from CanaDAM 2025' },
   { src: '/talks/dma-2026-group.jpg', width: 1280, height: 754, caption: 'Group photo from DMA 2026' },
 ] as const;
+
+const researchTalks = [...internationalTalks, ...domesticTalks].sort((a, b) =>
+  Date.parse(b.date.replace(/–\d+/, '')) - Date.parse(a.date.replace(/–\d+/, '')),
+);
+const invitedTalks = researchTalks.filter((talk) => talk.type === 'Invited' || talk.type === 'Minisymposium');
+const contributedTalks = researchTalks.filter((talk) => talk.type === 'Contributed');
 
 export default function TalksPage() {
   return (
@@ -32,8 +38,12 @@ export default function TalksPage() {
             </div>
           )}
           <div className="talk-group talk-group--international">
-            <div className="list-title"><h2>International presentations</h2><span>{String(internationalTalks.length).padStart(2, '0')}</span></div>
-            <TalkList items={internationalTalks} />
+            <div className="list-title"><h2>Invited talks</h2><span>{String(invitedTalks.length).padStart(2, '0')}</span></div>
+            <TalkList items={invitedTalks} showType={false} />
+          </div>
+          <div className="talk-group talk-group--international">
+            <div className="list-title"><h2>Contributed talks</h2><span>{String(contributedTalks.length).padStart(2, '0')}</span></div>
+            <TalkList items={contributedTalks} showType={false} />
           </div>
           <section className="talk-moments" aria-labelledby="talk-moments-title">
             <div className="talk-moments-heading">
@@ -49,10 +59,6 @@ export default function TalksPage() {
               ))}
             </div>
           </section>
-          <div className="talk-group talk-group--domestic">
-            <div className="list-title"><h2>Domestic presentations</h2><span>{String(domesticTalks.length).padStart(2, '0')}</span></div>
-            <TalkList items={domesticTalks} />
-          </div>
           <div className="talk-group talk-group--public">
             <div className="list-title"><h2>Public & outreach talks</h2><span>{String(publicTalks.length).padStart(2, '0')}</span></div>
             <div className="talk-list">

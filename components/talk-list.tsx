@@ -12,16 +12,16 @@ type Talk = {
   readonly deck: string;
 };
 
-export function TalkList({ items }: { items: readonly Talk[] }) {
+export function TalkList({ items, showType = true }: { items: readonly Talk[]; showType?: boolean }) {
   return (
     <div className="talk-list">
       {items.map((talk) => (
         <article
-          className={`talk-row${talk.type === 'Invited' || talk.type === 'Minisymposium' ? ' talk-row--featured' : ''}`}
+          className={`talk-row${showType && (talk.type === 'Invited' || talk.type === 'Minisymposium') ? ' talk-row--featured' : ''}`}
           key={`${talk.date}-${talk.title}`}
         >
           <div className="talk-meta">
-            <span>{talk.type}</span>
+            {showType && <span>{talk.type}</span>}
             <time>{talk.date}</time>
             <small>
               {talk.placeBreakBeforeCity ? (
@@ -34,6 +34,7 @@ export function TalkList({ items }: { items: readonly Talk[] }) {
           </div>
           <div className="talk-main">
             <h3>{talk.eventUrl ? <ExternalLink href={talk.eventUrl}>{talk.event}</ExternalLink> : talk.event}</h3>
+            {!showType && talk.type === 'Minisymposium' && <p className="talk-session">Minisymposium</p>}
             {talk.session && <p className="talk-session">Session · {talk.session}</p>}
             <p>{talk.title}</p>
           </div>
