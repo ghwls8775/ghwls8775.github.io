@@ -22,7 +22,7 @@ export default function ResearchPage() {
           </div>
           <div className="pub-columns">
             <div>
-              <div className="list-title"><h3>Accepted & published</h3><span>{String(published.length).padStart(2, '0')}</span></div>
+              <div className="list-title"><h3>Published</h3><span>{String(published.length).padStart(2, '0')}</span></div>
               <ol className="paper-list">
                 {published.map(([title, authors, journal, paperUrl, arxiv], index) => (
                   <li key={title}>
@@ -32,13 +32,6 @@ export default function ResearchPage() {
                       <p className="paper-authors">{authors}</p>
                       <cite className="paper-journal">{journal}</cite>
                       <ExternalLink className="paper-link" href={arxiv}>arXiv ↗</ExternalLink>
-                      {title === 'Competition graphs of degree bounded digraphs' && (
-                        <p className="paper-grant">
-                          For this research, I received a <strong>grant</strong> (with the same title) from{' '}
-                          <strong><em>Basic Science Research Program, National Research Foundation of Korea</em></strong>{' '}
-                          (KRW <strong>20,000,000</strong>, approximately USD <strong>15,000</strong>).
-                        </p>
-                      )}
                     </div>
                   </li>
                 ))}
@@ -56,10 +49,24 @@ export default function ResearchPage() {
               </ol>
             </div>
           </div>
-          <div className="publication-note">
-            <h3>Research funding</h3>
-            <p>KIAS Individual Grant (CG101801), March 2025–February 2027: KRW 20,000,000 total (approximately USD 15,000).</p>
-          </div>
+          <section className="research-funding" aria-labelledby="research-funding-title">
+            <div className="funding-heading"><h3 id="research-funding-title">Research funding</h3></div>
+            <div className="funding-grid">
+              <article className="funding-card">
+                <p className="funding-provider">Korea Institute for Advanced Study</p>
+                <h4>KIAS Individual Grant</h4>
+                <p className="funding-detail">March 2025–February 2027</p>
+                <p className="funding-reference">Grant CG101801</p>
+                <div className="funding-amount"><strong>KRW 20,000,000</strong><span>Total · approximately USD 15,000</span></div>
+              </article>
+              <article className="funding-card">
+                <p className="funding-provider">National Research Foundation of Korea</p>
+                <h4>Basic Science Research Program</h4>
+                <p className="funding-detail">Competition graphs of degree bounded digraphs</p>
+                <div className="funding-amount"><strong>KRW 20,000,000</strong><span>Approximately USD 15,000</span></div>
+              </article>
+            </div>
+          </section>
           <div className="publication-note">
             <ExternalLink className="dissertation-link" href="https://drive.google.com/file/d/1jADoKiArPaAjDPCu2aVpSZJRHVgfXWFv/view?usp=drive_link">
               <span>Ph.D. dissertation</span>

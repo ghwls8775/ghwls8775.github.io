@@ -280,6 +280,25 @@ p, cite, figcaption { text-wrap: pretty; overflow-wrap: break-word; }
 .paper-link { display: inline-block; margin-top: 9px; color: var(--olive); font-size: 11px; text-decoration: none; }
 .paper-grant { margin: 15px 0 2px; padding: 11px 13px; border-left: 2px solid var(--brick); background: var(--brick-soft); color: #555b52; font: 12px / 1.6 var(--sans); }
 .paper-grant strong { color: var(--ink); }
+
+.research-funding { margin-top: 58px; }
+.funding-heading { padding-bottom: 16px; border-bottom: 2px solid var(--olive-dark); }
+.funding-heading h3 { margin: 0; color: var(--olive-dark); font: 600 24px / 1.3 var(--display); letter-spacing: -.02em; }
+.funding-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; padding-top: 24px; }
+.funding-card { display: flex; flex-direction: column; min-width: 0; padding: 28px; background: var(--olive-soft); border: 1px solid var(--line); }
+.funding-provider { margin: 0 0 14px; color: var(--olive); font: 700 10px / 1.5 var(--sans); letter-spacing: .07em; text-transform: uppercase; }
+.funding-card h4 { margin: 0 0 12px; color: var(--ink); font: 600 21px / 1.3 var(--display); }
+.funding-detail { margin: 0; color: var(--muted); font: 15px / 1.55 var(--display); }
+.funding-reference { margin: 8px 0 0; color: var(--muted); font: 11px / 1.5 var(--sans); letter-spacing: .025em; }
+.funding-amount { display: grid; gap: 5px; margin-top: auto; padding-top: 24px; }
+.funding-amount strong { padding-top: 18px; border-top: 1px solid var(--line); color: var(--olive-dark); font: 600 21px / 1.3 var(--display); }
+.funding-amount span { color: var(--muted); font: 11px / 1.5 var(--sans); }
+@media (max-width: 700px) {
+  .research-funding { margin-top: 42px; }
+  .funding-grid { grid-template-columns: 1fr; gap: 16px; padding-top: 20px; }
+  .funding-card { padding: 24px 20px; }
+}
+
 .publication-note { margin-top: 42px; padding: 26px 0; border-block: 1px solid var(--olive-dark); }
 .dissertation-link { display: grid; gap: 6px; color: var(--olive-dark); text-decoration: none; }
 .dissertation-link span { color: var(--brick); font: 700 10px / 1.2 var(--sans); letter-spacing: .1em; text-transform: uppercase; }
