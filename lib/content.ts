@@ -20,6 +20,7 @@ export const focusAreas = [
 ];
 
 export const preprints = [
+  ['Minimum degree thresholds for even cycle residues', 'with Masaki Kashima, Shun-ichi Maezawa, Boram Park', 'https://arxiv.org/abs/2611.22346', '2611.22346'],
   ['On strong odd colorings of sparse graphs', 'with Ilkyoo Choi', 'https://arxiv.org/abs/2610.34874', '2610.34874'],
   ['Connectivity keeping paths in digraphs', 'with Boram Park, Homoon Ryu', 'https://arxiv.org/abs/2608.25240', '2608.25240'],
   ["A sharp extension of Halin's removable-edge theorem to matchings", '', 'https://arxiv.org/abs/2608.09394', '2608.09394'],
@@ -76,9 +77,11 @@ export const collaborators = [
   ['Ilkyoo Choi', 'https://sites.google.com/view/ilkyoochoi'],
   ['Myungho Choi', 'https://www.researchgate.net/profile/Choi-Myungho'],
   ['Shinya Fujita', 'https://www2u.biglobe.ne.jp/~sfujita/newmath.htm'],
+  ['Masaki Kashima', 'https://sites.google.com/view/masaki-kashima-webpage/home'],
   ['Ringi Kim', 'https://sites.google.com/view/ringikim/home'],
   ['Suh-Ryung Kim', 'https://www.researchgate.net/profile/Suh-Ryung-Kim'],
   ['Binlong Li', 'https://www.researchgate.net/scientific-contributions/Binlong-Li-59329296'],
+  ['Shun-ichi Maezawa', 'https://smaezawa.org/'],
   ['Boram Park', 'https://sites.google.com/view/borampark/'],
   ['Homoon Ryu', 'https://hmryu.com/'],
 ] as const;
@@ -104,6 +107,7 @@ type NewsItem = {
 };
 
 export const newsItems: readonly NewsItem[] = [
+  { date: 'November 2026', dateTime: '2026-11', label: 'Submitted', title: 'Minimum degree thresholds for even cycle residues', href: 'https://arxiv.org/abs/2611.22346', text: 'In joint work with Masaki Kashima, Shun-ichi Maezawa, and Boram Park, we determine the sharp minimum degree threshold for cycles whose length is divisible by an even integer at least four.' },
   { date: 'October 21, 2026', label: 'Talk', title: 'Minimum degree conditions for removable matchings in k-connected graphs', href: 'https://drive.google.com/file/d/1qiTYhaUKZAwnybgBVrmcKAZSnQugPpl1/view', text: 'I gave a contributed talk at the 2026 Combinatorics Workshop at Konjiam Resort in Gwangju-si, Korea.', image: {"kind": "photo", "src": "/news/combinatorics-workshop-2026-group.jpg", "alt": "Participants at the 2026 Combinatorics Workshop in Gonjiam, Korea", "width": 2000, "height": 930, "href": "https://cw2026.combinatorics.kr/assets/cw2026.jpeg", "caption": "Participants of the 2026 Combinatorics Workshop.", "credit": "2026 Combinatorics Workshop / IBS DIMAG", "sourceUrl": "https://cw2026.combinatorics.kr/en/"} },
   { date: 'October 6, 2026', label: 'Talk', title: 'A sharp extension of Halin’s removable-edge theorem to matchings', href: 'https://drive.google.com/file/d/1OIUqI1T81gXDRJycYkziqGsTpxbUd1IO/view', text: 'I gave an invited talk at the Combinatorics Seminar at Hanyang University in Seoul.' },
   {
